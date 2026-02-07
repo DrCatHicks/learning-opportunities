@@ -8,13 +8,13 @@ When you complete architectural work (new files, schema changes, refactors), Cla
 
 ## Why You Might Want to Experiment with This Skill
 
-AI coding tools can create a specific risks for decreasing users' engagement in learning, and introducing inefficient learning habits:
+AI coding tools can create a specific risks for decreasing users' engagement in learning, and introducing inefficient learning habits by ignoring the following science-backed learning principles:
 
-1. **Generation effect undermined:** Accepting generated code skips the active processing that builds understanding
-2. **Fluency illusion amplified:** Clean generated code feels understood even when it isn't
-3. **Spacing effect eliminated:** Machine velocity pushes toward constant cramming
-4. **Metacognition suppressed:** Fast workflows don't leave room to monitor learning and develop schema representation
-5. **Testing and retrieval underused** Fewer opportunities to benefit from testing
+1. **Generation effect:** Accepting generated code skips the active processing that builds understanding
+2. **Fluency illusion:** Clean generated code feels understood even when it isn't
+3. **Spacing effect:** Machine velocity pushes toward constant cramming
+4. **Metacognition:** Fast workflows don't leave room to monitor learning and develop schema representation
+5. **Testing and retrieval:** Fewer opportunities to benefit from testing
 
 The techniques in SKILL.md are designed to counteract these specific risks by reintroducing:
 - Active generation (predictions, explanations, sketches)
