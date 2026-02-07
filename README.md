@@ -53,17 +53,8 @@ It backs off when:
 
 ## The Science Behind It
 
-The exercises draw from well-established findings in learning science:
-
-| Principle | What it means | How the skill applies it |
-|-----------|---------------|--------------------------|
-| **Testing effect** | Retrieval strengthens memory more than re-studying | Prediction and generation exercises |
-| **Generation effect** | Producing information beats passively receiving it | "How would you approach this?" before showing solutions |
-| **Desirable difficulties** | Harder learning = more durable learning | Exercises require effort; Claude doesn't simplify when you struggle |
-| **Spacing effect** | Distributed practice beats cramming | Retrieval check-ins across sessions |
-| **Worked example effect** | Novices benefit from studying solutions; experts benefit from problem-solving | Fading scaffolding based on demonstrated competence |
-
-See [PRINCIPLES.md](PRINCIPLES.md) for detailed explanations which can help you refine this skill to your .
+The exercises draw from well-established findings in learning science.
+See [PRINCIPLES.md](PRINCIPLES.md) for detailed explanations which can help you refine this skill or learn more about what helps your own learning.
 
 ## Customization
 
