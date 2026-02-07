@@ -99,7 +99,7 @@ I'd love to know if you enjoy this!
 ## Author
 
 **Dr. Cat Hicks**  
-I'm a computational social scientist and psychologist studying software teams and developer experience. 
+I'm a psychological scientist studying software teams and technology work, an author, a public speaker, a research architect, and an empirical interventionist who builds radical research teams that put answers behind questions everyone is asking but few people are gathering real evidence about.
 
 - Website: [drcathicks.com](https://drcathicks.com)
 - Software Team & Eng Leadership Consulting: [catharsisinsight.com](https://www.catharsisinsight.com/)
