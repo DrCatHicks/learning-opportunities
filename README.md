@@ -8,21 +8,21 @@ When you complete architectural work (new files, schema changes, refactors), Cla
 
 ## Why You Might Want to Experiment with This Skill
 
-AI coding tools can create a specific risks for decreasing users' engagement in learning, and introducing inefficient learning habits by ignoring the following science-backed learning principles:
+AI coding tools can create a specific risks for decreasing users' engagement in learning by introducing inefficient learning habits. These effects can be anticipated based on several foundational science-backed learning principles:
 
-1. **Generation effect:** Accepting generated code skips the active processing that builds understanding
-2. **Fluency illusion:** Clean generated code feels understood even when it isn't
-3. **Spacing effect:** Machine velocity pushes toward constant cramming
-4. **Metacognition:** Fast workflows don't leave room to monitor learning and develop schema representation
-5. **Testing and retrieval:** Fewer opportunities to benefit from testing
+1. **Generation effect:** Accepting generated code and decreasing generating one's own code can skip the active processing that builds understanding. 
+2. **Fluency illusion:** Clean generated code can be perceived as more understood than it truly is; likewise, easily accessible knowledge from search can promote the illusion of knowledge and the illusion of more complete mental models.
+3. **Spacing effect:** Machine velocity can push users toward constant cramming and long production sessions without the cadence, reflection and spacing of learning that leads to longer-term retention.
+4. **Metacognition:** Fast workflows often don't leave room to monitor learning and develop schema representation as well as a user's sense of their own level of relative expertise and knowledge when working with novel technology.
+5. **Testing and retrieval:** Agentic models push toward giving complete answers, which could result in users taking fewer opportunities to benefit from self-testing and retrieving specific components of new knowledge, which strengthens retention.
 
-The techniques in SKILL.md are designed to counteract these specific risks by reintroducing:
+The techniques in SKILL.md are designed to counteract these risks by reintroducing:
 - Active generation (predictions, explanations, sketches)
 - Retrieval practice (check-ins, teach-it-back, self-testing)
 - Deliberate pauses (spacing, reflection)
 - Explicit metacognition (self-assessment, gap identification)
 
-This skill interrupts that pattern by reminding you to consider investing in reflection and learning. 
+This skill interrupts that pattern by reminding you to consider investing in reflection and learning. It introduces a different "mode" of interacting with Claude, which will intentionally feel different than highly fluent and fast agentic coding in the service of helping you reflect and explore your generated work. This skill may be particularly useful for users who are experimenting with developing discrete projects with agentic coding that involve multiple unfamiliar languages, techniques, or architectural patterns. 
 
 ## Installation
 
@@ -30,11 +30,11 @@ See [Claude Code's skill installation guide](https://code.claude.com/docs/en/ski
 
 ## How It Works
 
-After you complete significant work (which you can self-define, but I've suggested: creating new files or modules, database schema changes, architectural decisions or refactors, implementing unfamiliar patterns, any work where the user asked "why" questions during development) Claude will ask:
+After you complete significant work (which you can self-define, but I've suggested: creating new files or modules, database schema changes, architectural decisions or refactors, implementing unfamiliar patterns, any work where the user asked "why" questions during development. The key idea is to find a moment in your personal flow where a learning opportunity is most beneficial) Claude will ask:
 
 > "Would you like to do a quick learning exercise on [topic]? About 10-15 minutes."
 
-If you accept, Claude runs you through an interactive exercise. A key design principle: **Claude pauses and waits for your input** rather than answering its own questions. This pushes against Claude's default to always provide the full answer and encourages your own mental effort and learning. 
+If you accept, Claude runs you through an interactive exercise. A key design principle: **Claude pauses and waits for your input** rather than answering its own questions. This can feel frustrating, but this pushes against Claude's default to always provide the full answer and encourages your own mental effort and learning. 
 
 ### Exercise Types
 
@@ -45,47 +45,35 @@ If you accept, Claude runs you through an interactive exercise. A key design pri
 - **Teach it back**: Explain this component as if onboarding a new developer
 - **Retrieval check-in**: At the start of a session, what do you remember from last time?
 
-### When It Stays Quiet
+### Will Not Suggest Learning Opportunities When...
 
-It backs off when:
+Two suppression conditions are currently suggested which can be adapted to your workflow needs. 
+Claude will not prompt learning opportunities when:
 - You've already declined an exercise this session
 - You've completed 2 exercises this session
 
 ## The Science Behind It
 
-The exercises draw from well-established findings in learning science.
-See [PRINCIPLES.md](PRINCIPLES.md) for detailed explanations which can help you refine this skill or learn more about what helps your own learning.
+The exercises draw from well-established findings in learning science, along with substantive research on typical learner misconceptions. Design choices also draw from multiple qualitative interviews with developers about what aspects of rapid agentic coding they find most frustrating, worrisome, or difficult when it comes to their own learning and development.
+See [PRINCIPLES.md](PRINCIPLES.md) for detailed explanations which can help you develop new exercise types or simply learn more about strategies to help your own learning.
 
 ## Customization
 
-This skill can be refined and adapted. You might want to:
+This skill can be significantly refined and adapted. You might want to:
 
-- Include information about your own technical expertise and existing knowledge (e.g. known languages, learning goals)
+- Include information about your own technical expertise and existing knowledge to start the exercises at the right level (e.g. known languages, learning goals)
+- Prompt Claude to include insights from the learning opportunities into your project Claude.md 
 - Adjust trigger conditions for your workflow
 - Add project-specific examples to the exercises
 - Change the soft cap on exercises per session
 - Add domain-specific retrieval check-in questions
-- Explore iteration and adding evaluation checks to how successfully this skill is fulfilling its instructions
-
-The skill lives in your `~/.claude/skills/` directory—edit SKILL.md directly and restart Claude Code to see changes.
-
-## Evaluating the Skill
-
-The repo includes a suggested [EVALUATIONS.md](EVALUATIONS.md) with test scenarios:
-
-1. Does it trigger after architectural work?
-2. Does it recognize curiosity signals ("why did you...")?
-3. Does it exit gracefully when you need to ship?
-4. Does it actually pause for input?
-5. Does it respect your decline?
-
-Running through evaluation scenarios periodically can help you modify the skill, or encourage Claude to iterate the skill based on your experience with the learning opportunities.
+- Explore adding evaluation checks to how successfully this skill is fulfilling its instructions
 
 ## Background
 
-This skill was developed based on my own learning science background and informed by multiple qualitative interviews with software development professionals about their concerns around agentic coding, as part of my open science empirical evidence about developer thriving and skill development in AI-assisted workflows. [In my research](https://osf.io/preprints/psyarxiv/2gej5_v2), I've found that a strong value and commitment to learning predicts that developers feel less threat, worry and anxiety when imagining needing to adjust to agentic coding.
+This skill was developed based on learning science and informed by multiple qualitative interviews with software development professionals about their concerns around agentic coding, as part of my open science empirical evidence about developer thriving and skill development in AI-assisted workflows. [In my research with thousands of developers](https://osf.io/preprints/psyarxiv/2gej5_v2), I've also found that a strong value and commitment to learning predicts that developers feel less threat, worry and anxiety when imagining needing to adjust to agentic coding. Learning culture also associates with increases in team effectiveness overall, not just individual productivity. 
 
-I'd love to know if you enjoy this! 
+I'd love to know if you enjoy this and what you learn! Sharing open science resources helps researchers like me create more things to help software teams. I always appreciate a shout-out or a share in public, which helps more people learn about the psychology of software teams. 
 
 ## Author
 
