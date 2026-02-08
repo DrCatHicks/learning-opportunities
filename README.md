@@ -67,7 +67,7 @@ This skill can be significantly refined and adapted. You might want to:
 - Add project-specific examples to the exercises
 - Change the soft cap on exercises per session
 - Add domain-specific retrieval check-in questions
-- Explore adding evaluation checks to how successfully this skill is fulfilling its instructions
+- Explore adding evaluation checks to assess how successfully this skill is fulfilling its instructions
 
 ## Background
 
