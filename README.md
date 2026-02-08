@@ -55,7 +55,7 @@ Claude will not prompt learning opportunities when:
 ## The Science Behind It
 
 The exercises draw from well-established findings in learning science, along with substantive research on typical learner misconceptions. Design choices also draw from multiple qualitative interviews with developers about what aspects of rapid agentic coding they find most frustrating, worrisome, or difficult when it comes to their own learning and development.
-See [PRINCIPLES.md](PRINCIPLES.md) for detailed explanations which can help you develop new exercise types or simply learn more about strategies to help your own learning.
+See PRINCIPLES.md for detailed explanations which can help you develop new exercise types or simply learn more about strategies to help your own learning.
 
 ## Customization
 
