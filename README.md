@@ -8,7 +8,7 @@ When you complete architectural work (new files, schema changes, refactors), Cla
 
 ## Why You Might Want to Experiment with This Skill
 
-AI coding tools can create a specific risks for decreasing users' engagement in learning by introducing inefficient learning habits. These effects can be anticipated based on several foundational science-backed learning principles:
+AI coding tools can create specific risks for decreasing users' engagement in learning by introducing inefficient learning habits. These effects can be anticipated based on several foundational science-backed learning principles:
 
 1. **Generation effect:** Accepting generated code and decreasing generating one's own code can skip the active processing that builds understanding. 
 2. **Fluency illusion:** Clean generated code can be perceived as more understood than it truly is; likewise, easily accessible knowledge from search can promote the illusion of knowledge and the illusion of more complete mental models.
