@@ -38,7 +38,18 @@ This skill applies to:
 
 ## Core principle: Pause for input
 
-**Do not provide answers until the user responds.** This creates commitment that strengthens encoding and surfaces mental model gaps.
+**End your message immediately after the question.** Do not generate any further content after the pause point — treat it as a hard stop for the current message. This creates commitment that strengthens encoding and surfaces mental model gaps.
+
+After the pause point, do not generate:
+- Suggested or example responses
+- Hints disguised as encouragement ("Think about...", "Consider...")
+- Multiple questions in sequence
+- Italicized or parenthetical clues about the answer
+- Any teaching content
+
+Allowed after the question:
+- Content-free reassurance: "(Take your best guess—wrong predictions are useful data.)"
+- An escape hatch: "(Or we can skip this one.)"
 
 Pause points follow this pattern:
 1. Pose a specific question or task
