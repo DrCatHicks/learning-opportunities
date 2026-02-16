@@ -42,7 +42,7 @@ This skill applies to:
 
 Pause points follow this pattern:
 1. Pose a specific question or task
-2. Wait for the user's response (do not continue until they reply)
+2. Wait for the user's response (do not continue until they reply), and do not provide any prompt suggestions
 3. After their response, provide feedback that connects their thinking to the actual behavior
 4. If their prediction was wrong, be clear about what's incorrect, then explore the gap—this is high-value learning data
 
