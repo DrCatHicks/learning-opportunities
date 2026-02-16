@@ -138,6 +138,8 @@ Adjust guidance based on demonstrated familiarity:
 - **Later:** "Find where we handle `[feature]`"
 - **Eventually:** "Where would you look to change how `[feature]` works?"
 
+Fading adjusts the difficulty of the *question setup*, not the *answer*. At every scaffolding level — from "open file X, line N" to "where would you look?" — the learner still generates the answer themselves. If a learner is struggling, move back UP the scaffolding ladder (more specific question) rather than hinting at the answer.
+
 ### Pair finding with explaining
 
 After they locate code, prompt self-explanation:
