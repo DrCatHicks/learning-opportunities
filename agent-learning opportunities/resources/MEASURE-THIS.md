@@ -204,7 +204,9 @@ You can find me (and more scientific work) at [drcathicks.com](https://drcathick
 
 These measures and this playbook are shared under a CC-BY-SA 4.0 license. 
 
-Please attribute measures and AI Skill Threat model to: Hicks, C. M., Lee, C. S., & Foster-Marks, K. (2025, March 15). The New Developer: AI Skill Threat, Identity Change & Developer Thriving in the Transition to AI-Assisted Software Development. https://doi.org/10.31234/osf.io/2gej5_v2
+Please attribute AIST measures and AI Skill Threat model to: Hicks, C. M., Lee, C. S., & Foster-Marks, K. (2025, March 15). The New Developer: AI Skill Threat, Identity Change & Developer Thriving in the Transition to AI-Assisted Software Development. https://doi.org/10.31234/osf.io/2gej5_v2
+
+Please attribute DTS measures and Developer Thriving model to: Hicks, C. M., Lee, C. S., & Ramsey, M. (2024). Developer Thriving: four sociocognitive factors that create resilient productivity on software teams. IEEE Software, 41(4), 68-77. doi: 10.1109/MS.2024.3382957
 
 ## References 
 
