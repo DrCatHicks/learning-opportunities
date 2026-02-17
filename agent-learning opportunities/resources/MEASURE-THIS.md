@@ -90,8 +90,8 @@ These measures are provided under a **CC-BY-SA 4.0** license. You are welcome to
 
 **Format options I've seen work well:**
 - **Google Form or similar** — anonymous, structured, easiest to compare. Copy the items above into a form with the response scales as radio buttons.
-- **Team channel poll** — lower barrier, less private. Fine if your team culture supports open sharing, but will.
-- **Individual reflection** — each person jots down their own ratings. You can share or keep private.
+- **Team channel poll** — lower barrier, less private. Fine if your team culture supports open sharing, but will be harder to track over time and easier to forget.
+- **Individual reflection** — each person jots down their own ratings. You can share or keep private. Lets you still engage with the power of psychology for software teams even in a context where folks truly do not feel comfortable sharing their experiences or are survey-fatigued. 
 
 **Tips:**
 - Keep it anonymous if you can. People answer differently when they know their manager will see individual responses. However, emphasize that individual items are *naturally* going to shift and change over time.
