@@ -52,10 +52,25 @@ Claude will not prompt learning opportunities when:
 - You've already declined an exercise this session
 - You've completed 2 exercises this session
 
-## The Science Behind It
+## The Science Behind It & Resources
 
 The exercises draw from well-established findings in learning science, along with substantive research on typical learner misconceptions. Design choices also draw from multiple qualitative interviews with developers about what aspects of rapid agentic coding they find most frustrating, worrisome, or difficult when it comes to their own learning and development.
+
 See PRINCIPLES.md for detailed explanations which can help you develop new exercise types or simply learn more about strategies to help your own learning.
+
+## NEW: Measure This — A Playbook for Making Your Team Experiment Visible
+
+If you're trying this skill with your team, you can layer on a lightweight pre/post measurement to make the experiment more visible and valued in your organization. 
+
+[**MEASURE-THIS.md**](agent-learning%20opportunities/resources/MEASURE-THIS.md) is a companion playbook that includes:
+
+- **A curated set of validated survey items** from our peer-reviewed research on developer thriving and AI skill threat — ready to copy into a Google Form or team channel
+- **Guidance on what to do (and not do) with your results** — including why variance matters as much as averages, and why you probably shouldn't run a t-test on your team of six
+- **Common mistakes when using AI to analyze small-sample data** — and what to do instead 
+- **A "team boast" template** — a fill-in-the-blank paragraph for packaging your experiment into an email to leadership, grounded in real research
+- **Claude.md nudges for statistical rigor** — if you want to use Claude for more complex analysis, these nudges help guard against common AI-assisted statistical mistakes
+
+The measures are free and open access under a CC-BY-SA 4.0 license. For the full set of measures and design notes, see [the AI Skill Threat open access measures supplement](https://osf.io/preprints/psyarxiv/2gej5) and [the Developer Thriving open access measures supplement](https://ieeexplore.ieee.org/ielx7/52/10547603/10491133/supp1-3382957.pdf?arnumber=10491133).
 
 ## Customization
 
