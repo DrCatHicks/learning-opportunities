@@ -103,3 +103,9 @@ I'm a psychological scientist studying software teams and technology work, an au
 - Sweller, J., & Cooper, G. A. (1985). The use of worked examples as a substitute for problem solving in learning algebra. Cognition and instruction, 2(1), 59-89.
 - Tankelevitch, L., Kewenig, V., Simkute, A., Scott, A. E., Sarkar, A., Sellen, A., & Rintel, S. (2024, May). The metacognitive demands and opportunities of generative AI. In Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems (pp. 1-24).
 - Hicks, C. (2025). Cognitive helmets for the AI bicycle: Part 1. *Fight for the Human*. https://www.fightforthehuman.com/cognitive-helmets-for-the-ai-bicycle-part-1/
+
+## License
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
