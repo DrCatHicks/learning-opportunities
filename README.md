@@ -58,7 +58,7 @@ The exercises draw from well-established findings in learning science, along wit
 
 See PRINCIPLES.md for detailed explanations which can help you develop new exercise types or simply learn more about strategies to help your own learning.
 
-## NEW: Measure This: A Lightweight Playbook for Making A Team Experiment Visible
+## NEW: Measure This, A Lightweight Playbook for Making A Team Experiment Visible
 
 If you're trying this skill with your team, you can layer on a lightweight pre/post measurement to make the experiment more visible and valued in your organization. 
 
