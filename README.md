@@ -82,7 +82,7 @@ I'm a psychological scientist studying software teams and technology work, an au
 
 - Website: [drcathicks.com](https://drcathicks.com)
 - Software Team & Eng Leadership Consulting: [catharsisinsight.com](https://www.catharsisinsight.com/)
-- Upcoming Book: *Fight for the Human: Psychology for Software Teams* (2026)
+- Upcoming Book: *The Psychology of Software Teams* (2026)
 
 ## Sources
 
