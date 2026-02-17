@@ -210,7 +210,7 @@ Please attribute measures and AI Skill Threat model to: Hicks, C. M., Lee, C. S.
 
 Curran, P. J., & Bauer, D. J. (2011). The disaggregation of within-person and between-person effects in longitudinal models of change. Annual review of psychology, 62(1), 583-619. https://doi.org/10.1146/annurev.psych.093008.100356 
 
-Flournoy, J.C., Lee, C.S., Wu, M. et al. No silver bullets: Why understanding software cycle time is messy, not magic. Empir Software Eng 30, 174 (2025). https://doi.org/10.1007/s10664-025-10735-w
+Flournoy, J.C., Lee, C.S., Wu, M., Hicks, C. No silver bullets: Why understanding software cycle time is messy, not magic. Empirical Software Engineering 30, 174 (2025). https://doi.org/10.1007/s10664-025-10735-w
 
 Frank, M. C., Braginsky, M., Cachia, J., Coles, N. A., Hardwicke, T. E., Hawkins, R. D., Mathur, M. B., & Williams, R. 2025. Experimentology: An Open Science Approach to Experimental Psychology Methods. Stanford University. https://doi.org/10.25936/3JP6-5M50. (Also published by MIT Press, ISBN 978-0-262-55256-1)
 
