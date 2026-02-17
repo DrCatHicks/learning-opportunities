@@ -26,7 +26,7 @@ Hicks, C. M., Lee, C. S., & Ramsey, M. (2024). Developer Thriving: four sociocog
 
 You can find the complete set of measures and more detailed design notes in [the AI Skill Threat open access measures supplement](https://osf.io/preprints/psyarxiv/2gej5) and in the [the Developer Thriving online supplement](https://ieeexplore.ieee.org/ielx7/52/10547603/10491133/supp1-3382957.pdf?arnumber=10491133).
 
-I've selected a subset of 8 items that are most relevant to what you're likely to see shift during a week-long learning experiment, and which I've found most useful in consulting with real working teams. This takes about 2 minutes to complete. You can use all of them, pick the ones that resonate, or add your own — but keep it short enough that people will actually do it twice.
+I've selected a subset of items that are most relevant to what you're likely to see shift during a week-long learning experiment, and which I've found most useful in consulting with real working teams. This takes about 2 minutes to complete. You can use all of them, pick the ones that resonate, or add your own — but keep it short enough that people will actually do it twice. There's a depth/practicality trade-off here: asking more items is a better measure of a construct, but in the real world, it's important to not bog people down. The reason to use tested measures like ours is because we've seen them perform well over thousands of people and generally make sense to most of those people in contexts of working software teams.
 
 ### Core Items
 
