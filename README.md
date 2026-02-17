@@ -34,7 +34,7 @@ After you complete significant work (which you can self-define, but I've suggest
 
 > "Would you like to do a quick learning exercise on [topic]? About 10-15 minutes."
 
-If you accept, Claude runs you through an interactive exercise. A key design principle: **Claude pauses and waits for your input** rather than answering its own questions. This can feel frustrating, but this pushes against Claude's default to always provide the full answer and encourages your own mental effort and learning. You may encounter and need to design against Claude's defaults to provide the complete answer; please feel free let me know if you find gotchas or conflicts in your own workflow that you think will generalize to others so that I can incorporate in the Skill to improve this (e.g., suppressing prompt suggestions).
+If you accept, Claude runs you through an interactive exercise. A key design principle: **Claude pauses and waits for your input** rather than answering its own questions. This can feel frustrating, but this pushes against Claude's default to always provide the full answer and encourages your own mental effort and learning. You may encounter and need to design against Claude's defaults to provide the complete answer; please feel free let me know if you find gotchas or conflicts in your own workflow that you think will generalize to others so that I can incorporate in the Skill to improve this (e.g., I learned we needed to suppress prompt suggestions).
 
 ### Exercise Types
 
