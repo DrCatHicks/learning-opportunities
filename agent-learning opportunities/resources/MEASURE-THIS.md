@@ -216,3 +216,5 @@ Frank, M. C., Braginsky, M., Cachia, J., Coles, N. A., Hardwicke, T. E., Hawkins
 
 Hicks, C. M., Lee, C. S., & Foster-Marks, K. (2025, March 15). The New Developer: AI Skill Threat, Identity Change & Developer Thriving in the Transition to AI-Assisted Software Development. https://doi.org/10.31234/osf.io/2gej5_v2
 
+Hicks, C. M., Lee, C. S., & Ramsey, M. (2024). Developer Thriving: four sociocognitive factors that create resilient productivity on software teams. IEEE Software, 41(4), 68-77. doi: 10.1109/MS.2024.3382957
+
