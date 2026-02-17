@@ -73,7 +73,7 @@ This skill can be significantly refined and adapted. You might want to:
 
 This skill was developed based on learning science and informed by multiple qualitative interviews with software development professionals about their concerns around agentic coding, as part of my open science empirical evidence about developer thriving and skill development in AI-assisted workflows. [In my research with thousands of developers](https://osf.io/preprints/psyarxiv/2gej5_v2), I've also found that a strong value and commitment to learning predicts that developers feel less threat, worry and anxiety when imagining needing to adjust to agentic coding. Learning culture also associates with increases in team effectiveness overall, not just individual productivity. 
 
-I'd love to know if you enjoy this and what you learn! Sharing open science resources helps researchers like me create more things to help software teams. I always appreciate a shout-out or a share in public, which helps more people learn about the psychology of software teams. 
+I'd love to know if you enjoy this and what you learn! Sharing open science resources helps researchers like me create more things to help software teams. I always appreciate a shout-out or a share in public, which helps more people learn about the psychology of software teams. Get updates and access to more of the psychology of software teams at my newsletter: [Fight for the Human](https://www.fightforthehuman.com/)
 
 ## Author
 
@@ -82,7 +82,6 @@ I'm a psychological scientist studying software teams and technology work, an au
 
 - Website: [drcathicks.com](https://drcathicks.com)
 - Software Team & Eng Leadership Consulting: [catharsisinsight.com](https://www.catharsisinsight.com/)
-- Newsletter: [Fight for the Human](https://fightforthehuman.com)
 - Upcoming Book: *Fight for the Human: Psychology for Software Teams* (2026)
 
 ## Sources
