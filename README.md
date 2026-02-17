@@ -64,9 +64,8 @@ If you're trying this skill with your team, you can layer on a lightweight pre/p
 
 [**MEASURE-THIS.md**](agent-learning%20opportunities/resources/MEASURE-THIS.md) is a companion playbook that includes:
 
-- **A curated set of validated survey items** from our peer-reviewed research on developer thriving and AI skill threat — ready to copy into a Google Form or team channel
-- **Guidance on what to do (and not do) with your results** — including why variance matters as much as averages, and why you probably shouldn't run a t-test on your team of six
-- **Common mistakes when using AI to analyze small-sample data** — and what to do instead 
+- **A curated set of validated survey items** from our peer-reviewed research on developer thriving and AI skill threat, ready to copy into a Google Form or team channel
+- **Guidance on what to do (and not do) with your results** including why variance matters as much as averages, and some guardrails on how I think about these types of measures
 - **A "team boast" template** — a fill-in-the-blank paragraph for packaging your experiment into an email to leadership, grounded in real research
 - **Claude.md nudges for statistical rigor** — if you want to use Claude for more complex analysis, these nudges help guard against common AI-assisted statistical mistakes
 
