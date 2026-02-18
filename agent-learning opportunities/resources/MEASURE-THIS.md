@@ -96,39 +96,37 @@ These measures are provided under a **CC-BY-SA 4.0** license. You are welcome to
 **Tips:**
 - Keep it anonymous if you can. People answer differently when they know their manager will see individual responses. However, emphasize that individual items are *naturally* going to shift and change over time.
 - Use the exact same items and scales both times. Don't reword things between pre and post.
-- Don't discuss the "expected" results before people take the post survey. You want their genuine experience, not social desirability.
+- Don't discuss the "expected" results before people take the post survey, and emphasize there are no right or wrong answers (make sure this is true: otherwise you are measuring social desirability not the intended constructs).
 
 ## What to Do with Your Results
 
 ### What you CAN do
 
-**Look at averages as well as the distributions of scores.** For each item, average the team's pre scores and the team's post scores. You now have a direction of movement for each construct. However, average scores will be more or less meaningful depending on the team context. 
+**Look at averages as well as the distributions of scores.** For each item, you can compare both team and individual pre scores and the team's post scores. For multiple item constructs, you can use an average. You now have a direction of movement for each construct. However, team average scores may be less meaningful for small teams. 
 
-**Look at direction, not magnitude.** Did learning culture go up? Did AI skill threat go down? Did self-efficacy hold steady or increase? The *direction* is informative even when the *amount* isn't statistically testable.
+**Look at direction, not just magnitude.** Did learning culture go up? Did AI skill threat go down? Did self-efficacy hold steady or increase? The *direction* is informative even when the *amount* isn't statistically testable.
 
-**Use it as a discussion prompt.** The most valuable part of this exercise can be simply discussing it among the team. Don't be afraid to let people criticize the measures themselves. They're not fixed in stone, they're just ways you tried to reflect on your experience. Try: "Our ratings of coding self-efficacy really seemed higher. Does that match how it felt? What do you think drove that change?" or "Learning culture didn't move much even though we thought it would. Was there something that made it hard to engage with learning this week?"
+**Use it as a discussion prompt.** The most valuable part of this exercise can be simply discussing it. Don't be afraid to let people criticize the measures themselves. They're not fixed in stone, they're just ways you tried to reflect on your experience. Try: "Our ratings of coding self-efficacy really seemed higher. Does that match how it felt? What do you think drove that change?" or "Learning culture didn't move much even though we thought it would. Was there something that made it hard to engage with learning this week?" And always a classic: "what else would you suggest we measure?"
 
-**Compare your team's averages to the study benchmarks.** L\Our original study reports means and distributions for all of these measures across 3,267 developers. You can talk about where your team sits relative to the broader population. That context can be powerful regardless of the direction of difference. Treat this as a talking point, not a referendum (there may be perfectly valid reasons you look different from our research sample, not least of which because the AI tools themselves are changing constantly): "Our team's learning culture is above the average" or "We're seeing higher AI skill threat than the study sample, I wonder why."
+**Compare your team's averages to the study, but don't get stuck on the idea of benchmarks.** Our original study reports results across 3,267 developers. You can talk about where your team sits relative to the broader population. That context can be powerful regardless of the direction of difference. Treat this as a talking point, not a referendum (there may be perfectly valid reasons you look different from our research sample, not least of which because the AI tools themselves are changing constantly): "Our team's learning culture is above the average" or "We're seeing higher AI skill threat than the study sample, I wonder why."
 
-It can be very helpful to look at spread/overall patterns, not just the center. If your team's average AI Skill Threat went from 3.5 to 3.2, that's interesting — but it matters a lot whether everyone moved from ~3.5 to ~3.2, or whether one person dropped from 5 to 1 while everyone else stayed the same. An easy way to think about this is to always report the range or standard deviation alongside the average. In software development research, within-person and between-person variance is often enormous relative to the effects of any single factor (you can read our large-scale research *and* use the code from it at the reference Flournoy, Lee, Wu & Hicks, 2025). A single observation is a very noisy signal of what's typical. This applies to your team's survey responses too.
+**Look for the variation.** It can be very helpful to look at spread/overall patterns, not just the center. If your team's average AI Skill Threat went from 3.5 to 3.2, that might be interesting but it changes the picture if it's because everyone moved from ~3.5 to ~3.2, or whether one person dropped from 5 to 1 while everyone else stayed the same. An easy way to think about this is to always report the range or standard deviation alongside the average. In software development research, within-person and between-person variance is often enormous relative to the effects of any single factor (you can read our large-scale research *and* use the code from it at the reference Flournoy, Lee, Wu & Hicks, 2025). A single observation is a very noisy signal of what's typical. Repeating measures can help you check what's truly moving over a longer period of time.
 
 ### What you probably should NOT do
 
-**Do not fixate on p-values or even run statistical significance tests on your team of 5-8 people.** A t-test on n=6 is not meaningful when you do not have the statistical power to detect real effects, and any p-value you get will be uninterpretable — a non-significant result does NOT mean nothing happened, and a significant result would be unreliable. This is not a limitation of your team or your experiment. However, if you have a larger team or a justified situation for statistical testing, you can certainly go for it. 
+**Do not fixate on p-values or necessarily even run statistical significance tests on your team of 5-8 people.** A t-test on n=6 is not often meaningful when you do not have the statistical power to detect real effects, and any p-value you get will be uninterpretable — a non-significant result does NOT mean nothing happened, and a significant result would be unreliable. This is not a limitation of your team or your experiment, just a reflection of how hard it is to measure effects. However, if you have a larger team or a justified situation for statistical testing, you can certainly go for it. 
 
-**Do not treat individual scores as a comprehensive diagnostic.** These measures describe patterns across groups. One person's score of 2 on AI Skill Threat doesn't mean they aren't threatened; one person's 5 on Learning Culture doesn't mean they're thriving. Aggregates are more stable than individual data points. I would treat a lightweight pre- and post- measurement as a team experiment about the *environment.* 
+**Do not treat individual scores as a comprehensive diagnostic.** These measures are most valid when used to describe patterns across groups and shouldn't be treated as a diagnostic for individuals. One person's score of 2 on AI Skill Threat doesn't mean they aren't threatened; one person's 5 on Learning Culture doesn't mean they're thriving. I would always default to treating a lightweight pre- and post- measurement as a momentary sample about people's perceptions of the *environment.* 
 
-**Do not treat individual measures as fixed, immutable traits**
-
-We built these measures to help teams reflect on what they feel is supported and most emphasized by their teams. If you read our whole paper, you'll see that these measures are grounded in empirical psychology that is about *beliefs and cultures that can change*, not about identifying fixed and immutable traits of individuals.
+**Do not treat individual measures as fixed, immutable traits** Related to the previous, we built these measures to help teams reflect on what they feel is supported and most emphasized by their teams. If you read our whole paper, you'll see that these measures are grounded in empirical psychology that is about *beliefs and cultures that can change*, not about identifying fixed and immutable traits of individuals.
 
 **Do not conclude "the intervention didn't work" from flat or mixed results.** A one-week experiment with a small team is a pilot. There are many reasons you might not see movement: the timeframe was too short, the team was already high on learning culture, people were distracted by other work, the measures don't capture the specific kind of change that happened. Absence of measurable change is not evidence of absence of impact. Qualitative impact can be just as valuable, and point you toward changes that will eventually show up in the measures.
 
-## Common Mistakes When Using AI to Analyze This
+## Common Mistakes When Using AI to Analyze 
 
-I'm currently building a companion analysis skill to help with responsible interpretation of this kind of data. It's not ready yet, but here's what you need to know right now:
+If you do want to use Claude or another AI tool to help you work with your data, consider writing a reusable analysis script instead of just pasting your data into a chat and asking for conclusions. Because just as with the Learning Opportunities Skill itself, **the act of building the analysis teaches you something that "just get me the answer" doesn't.**
 
-**If you ask an AI assistant to "analyze my results," it will almost certainly do something wrong.** Not because the tool is bad, but because its default behavior is to be helpful, and being helpful with small-sample data often means telling you a confident story that isn't warranted by the evidence. It can also default to common statistical misconceptions, so it's important to think about creating verifiable analysis code which you can then test, rather than simply ask "analyze our data."
+However, I'm not here to tell you what to do. If you ask an AI assistant to "analyze my data," there are some common pitfalls to be aware of. Its default behavior is to be helpful, and being helpful with small-sample data often means telling you a confident story that isn't warranted by the evidence. It can also default to common statistical misconceptions, so it's important to think about creating verifiable analysis code which you can then test on your data yourself, rather than simply ask "analyze our data."
 
 Here's what tends to go wrong, as I've gathered from not only my experimenting with Claude but also chatting with scientist friends about common mistakes we see:
 
@@ -136,24 +134,11 @@ Here's what tends to go wrong, as I've gathered from not only my experimenting w
 
 🚩 **Confabulated norms/giving you the interpretation rather than you making the interpretation.** When you ask "what does a score of 3.2 on AI Skill Threat mean?" Claude can confidently tells you it indicates "moderate anxiety" or is "within the normal range," but be making that up to plausibly fit what scientific conversations can sound like. It likely doesn't have access to the actual distribution from our study, and even if it did, norm interpretation typically requires understanding of the measurement context that goes beyond looking up a number. 
 
-🚩 **Overly-confident causal language from descriptive data, too-precise estimates, and overconfidence in interventions.** Claude will tend to push confident causal claims and estimates, like "the Learning Opportunities skill reduced AI Skill Threat by 18%." But if you ran a pre/post with no control group, you cannot necessarily always attribute the change to the skill, which is why we build our understanding from many experiments rather than one single test. Maybe your team had a good week, or a stressful project ended, and that also opened up the chance for them to try the Learning Opportunity Skill. Maybe people got more comfortable with each other. While pre/post designs can describe change they don't isolate causes. I'm not going to stand in your way making a reasonable inference about what helped in your real life, but I would keep in mind that it's *hard to change human psychology and many good interventions still fail in the real world,* [more on this in this paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC8928154/pdf/nihms-1772354.pdf). I would expect any single point estimate to be variable, so you should never treat an estimate from a one-time survey as a magic benchmark.  
+🚩 **Overly-confident causal language from descriptive data, too-precise estimates, and overconfidence in interventions.** Claude will tend to push confident causal claims and estimates, like "the Learning Opportunities skill reduced AI Skill Threat by 18%." But if you ran a pre/post with no control group, you cannot necessarily always attribute the change to the skill, which is why we build our understanding from many experiments rather than one single test. Maybe your team had a good week, or a stressful project ended, and that also opened up the chance for them to try the Learning Opportunity Skill. Maybe people got more comfortable with each other. While pre/post designs can describe change they don't isolate causes. I'm not going to stand in your way making a reasonable inference about what helped in your real life, but I would keep in mind that it's *hard to change human psychology and many good interventions still fail or vary in efficacy in the real world,* [more on this in this paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC8928154/pdf/nihms-1772354.pdf). I would expect any single point estimate to be variable, so you should never treat an estimate from a one-time survey as a magic benchmark.  
 
 **What to do instead:**
 
 If you're not comfortable with statistics, there's nothing wrong with sticking with descriptive summaries like averages, direction of change, range of responses, or the number of people on your team who had a positive change at all vs the number who had a negative change. Use the numbers to start conversations, not to end them. If you want to go deeper or need expert support on evidence design, that's the kind of thing I help teams with — [reach out](https://www.catharsisinsight.com/). If you are comfortable with statistics or just want to dive deeper into the world of applied research and your own learning, [I recommend this free resource](https://experimentology.io/). 
-
-## Write Code, Not Just Prompts
-
-If you do want to use Claude or another AI tool to help you work with your data, consider writing a reusable analysis script instead of just pasting your data into a chat and asking for conclusions. Because just as with the Learning Opportunities Skill itself, **the act of building the analysis teaches you something that "just get me the answer" doesn't.**
-
-A simple Python or R script that calculates pre/post averages for each measure, computes the difference, and prints a clean summary is:
-
-- **Reusable** — run it again next month when you repeat the experiment
-- **Testable** — you can see exactly what calculations are being done
-- **Shareable** — other teams can use your script for their own experiments
-- **A learning opportunity** — writing the analysis is itself a chance to understand what the numbers mean
-
-You can absolutely ask Claude to help you write this script. I just recommend that you stay in the driver's seat. 
 
 ## Some Claude nudges you might consider adding to your Claude.md or elsewhere if you are using it to design for more complex analysis
 
@@ -163,7 +148,7 @@ You can absolutely ask Claude to help you write this script. I just recommend th
 - Distinguish between statistical significance and practical significance 
 - Think about effect size, interaction effects, and multilevel models
 - Always characterize variance and spread alongside central tendency — standard deviations, ranges, and distributions matter as much as means
-- Disaggregate within-person and between-person effects when working with repeated measures; these can differ in sign and magnitude (Curran & Bauer, 2011; Flournoy, Lee, Wu & Hicks, 2025)
+- Disaggregate within-person and between-person effects when working with repeated measures (Curran & Bauer, 2011; Flournoy, Lee, Wu & Hicks, 2025)
 - When an effect is "statistically precise but practically small," say so. Small effects set against large unexplained variance means any single observation provides limited signal and suggest we need to incorporate other missing measures
 - Consider whether the outcome variable's distribution is appropriate for the analysis (e.g., when data is not normally distributed assuming it is can bias results)
 
@@ -182,9 +167,9 @@ You can absolutely ask Claude to help you write this script. I just recommend th
 
 ## The Team Boast
 
-If your experiment went well — or even if it was just interesting, I **highly recommend** you package it up. In my research with software teams, I have regularly found that less than one in four developers agree their organizations truly see and value their technical work. For more guidance, [I dove deeper into this in a project about why developers feel like they can't learn out loud](https://www.catharsisinsight.com/science).
+If your experiment went well — or even if it was just interesting, I **highly recommend** you use measurement in your strategy to package it up to communicate the value of what you're doing. In my research with software teams, I have regularly found that less than one in four developers agree their organizations truly see and value their technical work, and across my consulting, I've found that using thoughtful measurement to support team learning initiatives can be very helpful for defending those practices. For more guidance, [I dove deeper into this in a project about why developers feel like they can't learn out loud](https://www.catharsisinsight.com/science).
 
-Think about using a short paragraph in an update email, a Slack message to your skip-level, a slide in your team's next review. Here's a template I've given friends:
+Think about using a short paragraph in an update email, a Slack message to your skip-level, or a slide in your team's next review. Here's a template I've given friends:
 
 ---
 
