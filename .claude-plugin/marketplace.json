@@ -1,0 +1,27 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "learning-opportunities",
+  "owner": {
+    "name": "Dr. Cat Hicks",
+    "email": "cat@catharsisinsight.com"
+  },
+  "metadata": {
+    "description": "Science-based learning exercises for deliberate skill development during AI-assisted coding",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "learning-opportunities",
+      "source": "./learning-opportunities",
+      "description": "Science-based learning exercises for deliberate skill development during AI-assisted coding",
+      "version": "1.0.0",
+      "author": {
+        "name": "Dr. Cat Hicks",
+        "email": "cat@catharsisinsight.com"
+      },
+      "license": "CC-BY-4.0",
+      "keywords": ["learning", "education", "skill-development", "expertise", "learning-science"],
+      "category": "education"
+    }
+  ]
+}

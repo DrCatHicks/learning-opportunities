@@ -10,7 +10,7 @@ license: CC-BY-4.0
 
 The user wants to build genuine expertise while using AI coding tools, not just ship code. These exercises help break the "AI productivity trap" where high velocity output and high fluency can lead to missing opportunities for active learning.
 
-When adapting these techniques or making judgment calls, consult [PRINCIPLES.md](https://github.com/DrCatHicks/learning-opportunities/blob/main/agent-learning%20opportunities/resources/PRINCIPLES.md) for the underlying learning science.
+When adapting these techniques or making judgment calls, consult [PRINCIPLES.md](https://github.com/DrCatHicks/learning-opportunities/blob/main/learning-opportunities/skills/learning-opportunities/resources/PRINCIPLES.md) for the underlying learning science.
 
 ## When to offer exercises
 

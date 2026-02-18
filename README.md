@@ -24,10 +24,6 @@ The techniques in SKILL.md are designed to counteract these risks by reintroduci
 
 This skill interrupts that pattern by reminding you to consider investing in reflection and learning. It introduces a different "mode" of interacting with Claude, which will intentionally feel different than highly fluent and fast agentic coding in the service of helping you reflect and explore your generated work. This skill may be particularly useful for users who are experimenting with developing discrete projects with agentic coding that involve multiple unfamiliar languages, techniques, or architectural patterns. 
 
-## Installation
-
-See [Claude Code's skill installation guide](https://code.claude.com/docs/en/skills) for how to add skills to your setup.
-
 ## How It Works
 
 After you complete significant work (which you can self-define, but I've suggested: creating new files or modules, database schema changes, architectural decisions or refactors, implementing unfamiliar patterns, any work where the user asked "why" questions during development. The key idea is to find a moment in your personal flow where a learning opportunity is most beneficial) Claude will ask:
@@ -52,6 +48,27 @@ Claude will not prompt learning opportunities when:
 - You've already declined an exercise this session
 - You've completed 2 exercises this session
 
+## Installation
+
+This repository is a [Claude Code plugin marketplace](https://docs.claude.com/en/docs/claude-code/plugins). To install:
+
+1. Add the marketplace:
+   ```
+   /plugin marketplace add https://github.com/DrCatHicks/learning-opportunities.git
+   ```
+
+2. Install the plugin:
+   ```
+   /plugin install learning-opportunities@learning-opportunities
+   ```
+
+3. Reload to activate:
+   ```
+   /plugin reload
+   ```
+
+For more on Claude Code plugins, see the [plugin documentation](https://docs.claude.com/en/docs/claude-code/plugins).
+
 ## The Science Behind It & Resources
 
 The exercises draw from well-established findings in learning science, along with substantive research on typical learner misconceptions. Design choices also draw from multiple qualitative interviews with developers about what aspects of rapid agentic coding they find most frustrating, worrisome, or difficult when it comes to their own learning and development.
@@ -62,7 +79,7 @@ See PRINCIPLES.md for detailed explanations which can help you develop new exerc
 
 If you're trying this skill with your team, you can layer on a lightweight pre/post measurement to make the experiment more visible and valued in your organization. 
 
-[**MEASURE-THIS.md**](agent-learning%20opportunities/resources/MEASURE-THIS.md) is a companion playbook that includes:
+[**MEASURE-THIS.md**](learning-opportunities/docs/MEASURE-THIS.md) is a companion playbook that includes:
 
 - **A curated set of validated survey items** from our peer-reviewed research on developer thriving and AI skill threat, ready to copy into a Google Form or team channel
 - **Guidance on what to do (and not do) with your results** including why variance matters as much as averages, and some guardrails on how I think about these types of measures
