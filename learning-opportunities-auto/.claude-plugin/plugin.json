@@ -1,0 +1,20 @@
+{
+  "name": "learning-opportunities-auto",
+  "version": "1.0.0",
+  "description": "Automatically nudges Claude to offer learning exercises after git commits. Requires the learning-opportunities plugin.",
+  "author": {
+    "name": "Dr. Cat Hicks",
+    "url": "https://drcathicks.com"
+  },
+  "homepage": "https://github.com/DrCatHicks/learning-opportunities",
+  "repository": "https://github.com/DrCatHicks/learning-opportunities",
+  "license": "CC-BY-4.0",
+  "keywords": ["learning", "education", "skill-development", "expertise", "learning-science"],
+  "hooks": [
+    {
+      "event": "PostToolUse",
+      "matcher": "Bash",
+      "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/post-tool-use.sh"
+    }
+  ]
+}
