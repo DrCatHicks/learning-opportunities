@@ -1,5 +1,14 @@
 # Changelog
 
+## learning-opportunities-auto 1.0.0
+
+Initial release of the automatic hook companion plugin.
+
+**New:**
+- `PostToolUse` hook that triggers after `git commit` and nudges Claude to offer a learning exercise when appropriate
+- Bash implementation — works on Linux and macOS out of the box; Windows users need to configure `CLAUDE_CODE_GIT_BASH_PATH` (see README)
+- Session state tracking: respects the learning-opportunities skill's two-exercise-per-session limit and declined-offer flag
+
 ## learning-opportunities 1.0.0
 
 Initial release as a Claude Code plugin.
