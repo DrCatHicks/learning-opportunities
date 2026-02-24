@@ -6,6 +6,28 @@ This skill uses an adaptive "dynamic textbook" approach to help you integrate sc
 
 When you complete architectural work (new files, schema changes, refactors), Claude offers optional 10-15 minute learning exercises grounded in evidence-based learning science. The exercises use techniques like prediction, generation, retrieval practice, and spaced repetition to provide you with semi-worked examples from across your own project work.
 
+## Installation
+
+This repository is a [Claude Code plugin marketplace](https://docs.claude.com/en/docs/claude-code/plugins). To install:
+
+1. Add the marketplace:
+   ```
+   /plugin marketplace add https://github.com/DrCatHicks/learning-opportunities.git
+   ```
+
+2. Install the plugin:
+   ```
+   /plugin install learning-opportunities@learning-opportunities
+   ```
+
+3. Restart Claude Code to activate
+ 
+For more on Claude Code plugins, see the [plugin documentation](https://docs.claude.com/en/docs/claude-code/plugins).
+
+### Automatic Prompting (Optional)
+
+Linux and macOS users can install `learning-opportunities-auto` alongside `learning-opportunities` to have Claude automatically consider offering an exercise after each git commit. Windows users can use it too — [a little setup is required](./learning-opportunities-auto/README.md#windows-setup).
+
 ## Why You Might Want to Experiment with This Skill
 
 AI coding tools can create specific risks for decreasing users' engagement in learning by introducing inefficient learning habits. These effects can be anticipated based on several foundational science-backed learning principles:
@@ -47,31 +69,6 @@ Two suppression conditions are currently suggested which can be adapted to your 
 Claude will not prompt learning opportunities when:
 - You've already declined an exercise this session
 - You've completed 2 exercises this session
-
-## Installation
-
-This repository is a [Claude Code plugin marketplace](https://docs.claude.com/en/docs/claude-code/plugins). To install:
-
-1. Add the marketplace:
-   ```
-   /plugin marketplace add https://github.com/DrCatHicks/learning-opportunities.git
-   ```
-
-2. Install the plugin:
-   ```
-   /plugin install learning-opportunities@learning-opportunities
-   ```
-
-3. Reload to activate:
-   ```
-   /plugin reload
-   ```
-
-For more on Claude Code plugins, see the [plugin documentation](https://docs.claude.com/en/docs/claude-code/plugins).
-
-### Automatic Prompting (Optional)
-
-Linux and macOS users can install `learning-opportunities-auto` alongside `learning-opportunities` to have Claude automatically consider offering an exercise after each git commit. Windows users can use it too — [a little setup is required](./learning-opportunities-auto/README.md#windows-setup).
 
 ## The Science Behind It & Resources
 
