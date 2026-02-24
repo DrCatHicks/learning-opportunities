@@ -20,10 +20,7 @@ This repository is a [Claude Code plugin marketplace](https://docs.claude.com/en
    /plugin install learning-opportunities@learning-opportunities
    ```
 
-3. Reload to activate:
-   ```
-   /plugin reload
-   ```
+3. Restart Claude Code to activate
 
 For more on Claude Code plugins, see the [plugin documentation](https://docs.claude.com/en/docs/claude-code/plugins).
 
