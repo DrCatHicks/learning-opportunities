@@ -11,6 +11,19 @@
   },
   "plugins": [
     {
+      "name": "learning-opportunities-auto",
+      "source": "./learning-opportunities-auto",
+      "description": "Automatically nudges Claude to offer learning exercises after git commits. Requires the learning-opportunities plugin.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Dr. Cat Hicks",
+        "email": "dr.cat.hicks@gmail.com"
+      },
+      "license": "CC-BY-4.0",
+      "keywords": ["learning", "education", "skill-development", "expertise", "learning-science", "hooks"],
+      "category": "education"
+    },
+    {
       "name": "learning-opportunities",
       "source": "./learning-opportunities",
       "description": "Science-based learning exercises for deliberate skill development during AI-assisted coding",

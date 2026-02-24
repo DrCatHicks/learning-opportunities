@@ -9,9 +9,12 @@ A Claude Code plugin packaging science-based learning exercises for deliberate s
 ## Project Structure
 
 - `.claude-plugin/marketplace.json` - Marketplace catalog (repo root is the marketplace)
-- `learning-opportunities/` - The plugin
+- `learning-opportunities/` - The skill plugin
   - `.claude-plugin/plugin.json` - Plugin manifest
   - `skills/learning-opportunities/` - The skill (SKILL.md + resources)
+- `learning-opportunities-auto/` - The auto-prompting hook plugin (requires `learning-opportunities`)
+  - `.claude-plugin/plugin.json` - Plugin manifest
+  - `scripts/post-tool-use.sh` - PostToolUse hook (bash)
 - `CHANGELOG.md` - Release history
 
 ## Releasing a New Version

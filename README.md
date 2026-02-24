@@ -21,9 +21,12 @@ This repository is a [Claude Code plugin marketplace](https://docs.claude.com/en
    ```
 
 3. Restart Claude Code to activate
-
+ 
 For more on Claude Code plugins, see the [plugin documentation](https://docs.claude.com/en/docs/claude-code/plugins).
 
+### Automatic Prompting (Optional)
+
+Linux and macOS users can install `learning-opportunities-auto` alongside `learning-opportunities` to have Claude automatically consider offering an exercise after each git commit. Windows users can use it too — [a little setup is required](./learning-opportunities-auto/README.md#windows-setup).
 
 ## Why You Might Want to Experiment with This Skill
 
