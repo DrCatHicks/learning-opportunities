@@ -40,7 +40,7 @@ If you run into issues, check that `Git\bin` (not just `Git\cmd`) is on your PAT
 
 ## How Hooks Work
 
-This plugin uses Claude Code's [hooks system](https://docs.anthropic.com/en/docs/claude-code/hooks) to run a script after each tool use. For more on writing and configuring hooks, see the official documentation.
+This plugin uses Claude Code's [hooks system](https://docs.anthropic.com/en/docs/claude-code/hooks) to run a script after each tool use. The hook is declared in `hooks/hooks.json`, which Claude Code reads at plugin load time. The hook script itself lives at `hooks/post-tool-use.sh`. For more on writing and configuring hooks, see the official documentation.
 
 ## License
 

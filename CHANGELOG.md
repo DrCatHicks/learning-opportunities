@@ -1,5 +1,11 @@
 # Changelog
 
+## learning-opportunities-auto 1.0.1
+
+**Fixed:**
+- Moved hook declaration from inline `plugin.json` format to `hooks/hooks.json`, which is the format Claude Code actually reads at runtime
+- Moved `scripts/post-tool-use.sh` to `hooks/post-tool-use.sh` to colocate with hook configuration
+
 ## learning-opportunities-auto 1.0.0
 
 Initial release of the automatic hook companion plugin.
