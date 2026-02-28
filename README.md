@@ -6,6 +6,9 @@ This skill uses an adaptive "dynamic textbook" approach to help you integrate sc
 
 When you complete architectural work (new files, schema changes, refactors), Claude offers optional 10-15 minute learning exercises grounded in evidence-based learning science. The exercises use techniques like prediction, generation, retrieval practice, and spaced repetition to provide you with semi-worked examples from across your own project work.
 
+Pairs well with [Learning-Goal](https://github.com/DrCatHicks/learning-goal), a skill that guides you through semi-structured, interactive learning goal-setting using the technique of Mental Contrasting with Implementation Intentions (MCII), an evidence-based exercise.
+
+
 ## Installation
 
 This repository is a [Claude Code plugin marketplace](https://docs.claude.com/en/docs/claude-code/plugins). To install:
