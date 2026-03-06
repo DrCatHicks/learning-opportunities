@@ -192,8 +192,8 @@ If this skill is invoked with the argument `orient` (i.e., `/learning-opportunit
 
 Look for `resources/orientation.md` relative to this skill file at these locations, in order:
 
-1. `.claude/skills/agent-learning-opportunities/resources/orientation.md` (project level)
-2. `~/.claude/skills/agent-learning-opportunities/resources/orientation.md` (user level)
+1. `.claude/skills/learning-opportunities/resources/orientation.md` (project level)
+2. `~/.claude/skills/learning-opportunities/resources/orientation.md` (user level)
 
 If the file does not exist at either location, stop and tell the user:
 
@@ -203,7 +203,7 @@ See [orient](https://github.com/mcmullarkey/orient) for the plugin that generate
 
 ### Running the orientation exercise
 
-If `orientation.md` exists, read it and run through the **Suggested exercise sequence** section it contains. Apply all standard skill techniques: pause for input after each question, use fading scaffolding, embrace wrong predictions as learning data.
+If `orientation.md` exists, read it and run through the **Suggested exercise sequence** section it contains. Apply all standard skill techniques: pause for input after each question, use fading scaffolding, embrace wrong predictions as learning data. The orientation file contains repo-specific content but not full pedagogical guidance — consult [PRINCIPLES.md](https://github.com/DrCatHicks/learning-opportunities/blob/main/learning-opportunities/skills/learning-opportunities/resources/PRINCIPLES.md) as needed when making facilitation decisions.
 
 Before starting, give the user a one-sentence summary of what the orientation covers and ask if they want to proceed — consistent with the "always ask before starting" principle.
 

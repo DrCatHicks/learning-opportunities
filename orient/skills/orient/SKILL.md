@@ -24,7 +24,7 @@ Always write to the **project level**, regardless of where the `learning-opportu
 
 (relative to the current working directory)
 
-Create the directory `.claude/skills/learning-opportunities/resources/` if it does not exist.
+If the directory `.claude/skills/learning-opportunities/resources/` does not exist, create it. If it already exists, leave it and any files inside it untouched — only write `orientation.md`.
 
 This keeps orientation files co-located with the repo they describe — they can be committed to version control, shared with teammates, and never collide across projects.
 
@@ -160,7 +160,7 @@ Keep each section concise. This is a teaching scaffold, not documentation. Prior
 
 ## Step 5: Confirm to the user
 
-> **Note for skill maintainers**: Academic and practitioner sources for the exploration methodology in Steps 3a–3f are documented in [resources/bibliography.md](resources/bibliography.md). Load that file only if you need to update or cite sources — it is not needed during normal skill execution.
+> **Note for skill maintainers**: Academic and practitioner sources for the exploration methodology in Steps 3a–3f are documented in [resources/orient-bibliography.md](resources/orient-bibliography.md). Load that file only if you need to update or cite sources — it is not needed during normal skill execution.
 
 Tell the user:
 - Where the file was written

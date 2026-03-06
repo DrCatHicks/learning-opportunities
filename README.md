@@ -33,7 +33,7 @@ Linux and macOS users can install `learning-opportunities-auto` alongside `learn
 
 ### Get Repo Orientation Lessons (Optional)
 
-If you're learning a new repo you can create an `orientation.md` file with suggested lessons using the `orient` skill.
+If you're learning a new repo you can create an `orientation.md` file with suggested lessons using the `orient` skill. The orientation approach applies strategies from empirical research on program comprehension and codebase navigation — including how expert developers sample codebases strategically rather than reading exhaustively. See the [orient bibliography](orient/skills/orient/resources/orient-bibliography.md) for the full source list.
 
 Install the orient plugin:
 ```
