@@ -1,5 +1,13 @@
 # Changelog
 
+## orient 1.0.0
+
+Added orient plugin to the learning-opportunities marketplace.
+
+**New:**
+- `orient` skill for generating repo-specific orientation files using program comprehension research
+- Showboat mode for detailed linear code walkthroughs
+
 ## learning-opportunities-auto 1.0.1
 
 **Fixed:**

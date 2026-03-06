@@ -1,10 +1,13 @@
 ---
 name: learning-opportunities
 description: Facilitates deliberate skill development during AI-assisted coding. Offers interactive learning exercises after architectural work (new files, schema changes, refactors). Use when completing features, making design decisions, or when user asks to understand code better. Supports the user's stated goal of understanding design choices as learning opportunities.
+argument-hint: "[orient]"
 license: CC-BY-4.0
 ---
 
 # Learning Opportunities
+
+> Invocation argument: $ARGUMENTS
 
 ## Purpose
 
@@ -180,3 +183,28 @@ After exploring one instance, have them find a parallel:
 - **Offer escape hatches**: "Want to keep going or pause here?"
 - **Keep exercises to 10-15 minutes** unless they want to go deeper
 - **Be direct about errors**: When they're wrong, say so clearly, then explore why without judgment
+
+## Orientation mode
+
+If this skill is invoked with the argument `orient` (i.e., `/learning-opportunities orient`), run a guided repo orientation exercise instead of the default exercise offer flow.
+
+### Finding the orientation file
+
+Look for `resources/orientation.md` relative to this skill file at these locations, in order:
+
+1. `.claude/skills/learning-opportunities/resources/orientation.md` (project level)
+2. `~/.claude/skills/learning-opportunities/resources/orientation.md` (user level)
+
+If the file does not exist at either location, stop and tell the user:
+
+> "No orientation file found. Run `/orient:orient` first to generate one for this repo. It takes about 30 seconds."
+
+See [orient](https://github.com/mcmullarkey/orient) for the plugin that generates orientation files.
+
+### Running the orientation exercise
+
+If `orientation.md` exists, read it and run through the **Suggested exercise sequence** section it contains. Apply all standard skill techniques: pause for input after each question, use fading scaffolding, embrace wrong predictions as learning data. The orientation file contains repo-specific content but not full pedagogical guidance — consult [PRINCIPLES.md](https://github.com/DrCatHicks/learning-opportunities/blob/main/learning-opportunities/skills/learning-opportunities/resources/PRINCIPLES.md) as needed when making facilitation decisions.
+
+Before starting, give the user a one-sentence summary of what the orientation covers and ask if they want to proceed — consistent with the "always ask before starting" principle.
+
+After the exercise sequence, ask the user: "What's one thing about this codebase that surprised you or that you want to dig into further?" Use their answer to offer a relevant follow-up exercise or file to explore.

@@ -35,6 +35,16 @@
       "license": "CC-BY-4.0",
       "keywords": ["learning", "education", "skill-development", "expertise", "learning-science"],
       "category": "education"
+    },
+    {
+      "name": "orient",
+      "source": "./orient",
+      "description": "Generates a repo-specific orientation.md for use with the learning-opportunities skill",
+      "version": "1.0.0",
+      "author": { "name": "Dr. Michael Mullarkey" },
+      "license": "CC-BY-4.0",
+      "keywords": ["orientation", "onboarding", "learning", "codebase"],
+      "category": "education"
     }
   ]
 }

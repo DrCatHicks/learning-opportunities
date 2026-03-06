@@ -31,6 +31,33 @@ For more on Claude Code plugins, see the [plugin documentation](https://docs.cla
 
 Linux and macOS users can install `learning-opportunities-auto` alongside `learning-opportunities` to have Claude automatically consider offering an exercise after each git commit. Windows users can use it too — [a little setup is required](./learning-opportunities-auto/README.md#windows-setup).
 
+### Get Repo Orientation Lessons (Optional)
+
+If you're learning a new repo you can create an `orientation.md` file with suggested lessons using the `orient` skill. The orientation approach applies strategies from empirical research on program comprehension and codebase navigation — including how expert developers sample codebases strategically rather than reading exhaustively. See the [orient bibliography](orient/skills/orient/resources/orient-bibliography.md) for the full source list.
+
+Install the orient plugin:
+```
+/plugin install orient@learning-opportunities
+```
+
+Navigate to the repo you want to orient yourself to, and call the `orient` skill either as default
+
+```
+/orient
+```
+
+Or using Simon Willison's `showboat` [tool](https://github.com/simonw/showboat)
+
+```
+/orient showboat
+```
+
+Then call `learning-opportunities` with the `orient` argument to get offered two lessons that will orient you to core features of the repo
+
+```
+/learning-opportunities orient
+```
+
 ## Why You Might Want to Experiment with This Skill
 
 AI coding tools can create specific risks for decreasing users' engagement in learning by introducing inefficient learning habits. These effects can be anticipated based on several foundational science-backed learning principles:
