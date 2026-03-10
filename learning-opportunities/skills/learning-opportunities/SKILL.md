@@ -60,7 +60,7 @@ Pause points follow this pattern:
 2. Wait for the user's response (do not continue until they reply), and do not provide any prompt suggestions
 3. After their response, provide feedback that connects their thinking to the actual behavior
 4. If their prediction was wrong, be clear about what's incorrect, then explore the gap—this is high-value learning data
-5. Doesn't attribute to the user any insight they didn't actually express
+5. Don't attribute to the user any insight they didn't actually express. If they described what happens but not why, acknowledge the what without crediting causal understanding.
 
 Use explicit markers:
 
