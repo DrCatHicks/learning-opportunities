@@ -1,0 +1,44 @@
+{
+  "name": "learning-opportunities",
+  "interface": {
+    "displayName": "Learning Opportunities"
+  },
+  "plugins": [
+    {
+      "name": "learning-opportunities",
+      "source": {
+        "source": "local",
+        "path": "./learning-opportunities"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education"
+    },
+    {
+      "name": "learning-opportunities-auto",
+      "source": {
+        "source": "local",
+        "path": "./learning-opportunities-auto"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education"
+    },
+    {
+      "name": "orient",
+      "source": {
+        "source": "local",
+        "path": "./orient"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education"
+    }
+  ]
+}

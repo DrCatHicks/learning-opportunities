@@ -13,15 +13,13 @@ set -uo pipefail
 INPUT=$(cat)
 
 # ---------------------------------------------------------------------------
-# Check if this was a git commit. The hook matcher already filters to Bash
-# tool calls, so we only need to detect git commit in the command field.
-# The payload is single-line JSON from Claude Code, so grepping the raw
-# input for the pattern in the "command" field is reliable. False positives
-# (e.g., output that mentions "git commit") are harmless — we just offer
-# a learning exercise unnecessarily.
+# Check if this was a git commit. Claude Code sends shell text in a "command"
+# field; Codex can send it in a "cmd" field. False positives (e.g., output
+# that mentions "git commit") are harmless — we just offer a learning exercise
+# unnecessarily.
 # ---------------------------------------------------------------------------
 
-if ! echo "$INPUT" | grep -q '"command".*git.*commit'; then
+if ! echo "$INPUT" | grep -Eq '"(command|cmd)".*git.*commit'; then
   exit 0
 fi
 

@@ -1,0 +1,28 @@
+{
+  "name": "learning-opportunities-auto",
+  "version": "1.0.1",
+  "description": "Automatically nudges Codex to offer learning exercises after git commits. Requires the learning-opportunities plugin.",
+  "author": {
+    "name": "Dr. Cat Hicks",
+    "email": "dr.cat.hicks@gmail.com",
+    "url": "https://drcathicks.com"
+  },
+  "homepage": "https://github.com/DrCatHicks/learning-opportunities",
+  "repository": "https://github.com/DrCatHicks/learning-opportunities",
+  "license": "CC-BY-4.0",
+  "keywords": ["learning", "education", "skill-development", "expertise", "learning-science", "hooks"],
+  "hooks": "./hooks.codex.json",
+  "interface": {
+    "displayName": "Learning Opportunities Auto",
+    "shortDescription": "Nudges learning exercise offers after commits",
+    "longDescription": "Adds a post-tool-use hook that notices git commits and reminds Codex to consider offering a short learning exercise through the learning-opportunities skill.",
+    "developerName": "Dr. Cat Hicks",
+    "category": "Education",
+    "capabilities": ["Interactive"],
+    "websiteURL": "https://github.com/DrCatHicks/learning-opportunities",
+    "defaultPrompt": [
+      "Offer learning exercises automatically after commits"
+    ],
+    "brandColor": "#2563EB"
+  }
+}

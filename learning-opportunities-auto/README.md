@@ -38,9 +38,13 @@ You can set this as a system environment variable, or add it to your shell profi
 
 If you run into issues, check that `Git\bin` (not just `Git\cmd`) is on your PATH, or that the environment variable above is set correctly. This is a [known friction point](https://github.com/anthropics/claude-code/issues/16602) in Claude Code's Windows hook support. If you're not sure how to set an environment variable or update your PATH on Windows, ask Claude — it can walk you through it.
 
+## Codex Support
+
+Codex uses `hooks.codex.json`, which runs the same `hooks/post-tool-use.sh` script with a Codex-safe relative command. The script accepts both Claude Code's `command` payload field and Codex-style `cmd` payloads.
+
 ## How Hooks Work
 
-This plugin uses Claude Code's [hooks system](https://docs.anthropic.com/en/docs/claude-code/hooks) to run a script after each tool use. The hook is declared in `hooks/hooks.json`, which Claude Code reads at plugin load time. The hook script itself lives at `hooks/post-tool-use.sh`. For more on writing and configuring hooks, see the official documentation.
+This plugin uses post-tool-use hooks to run a script after each shell command. Claude Code reads `hooks/hooks.json`; Codex reads `hooks.codex.json`. The hook script itself lives at `hooks/post-tool-use.sh`.
 
 ## License
 
