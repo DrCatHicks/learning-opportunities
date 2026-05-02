@@ -1,0 +1,26 @@
+{
+  "name": "orient",
+  "description": "Generates a repo-specific orientation.md for use with the learning-opportunities skill",
+  "version": "1.0.0",
+  "author": {
+    "name": "Dr. Michael Mullarkey"
+  },
+  "license": "CC-BY-4.0",
+  "homepage": "https://mcmullarkey.github.io/",
+  "repository": "https://github.com/DrCatHicks/learning-opportunities",
+  "keywords": ["orientation", "onboarding", "learning", "codebase"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Orient",
+    "shortDescription": "Generate repo orientation lessons",
+    "longDescription": "Creates a repo-specific orientation.md resource that learning-opportunities can use to run a structured orientation exercise for a new codebase.",
+    "developerName": "Dr. Michael Mullarkey",
+    "category": "Education",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://mcmullarkey.github.io/",
+    "defaultPrompt": [
+      "Generate an orientation lesson for this repo"
+    ],
+    "brandColor": "#0F766E"
+  }
+}

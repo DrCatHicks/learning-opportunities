@@ -9,26 +9,31 @@ A Claude Code plugin packaging science-based learning exercises for deliberate s
 ## Project Structure
 
 - `.claude-plugin/marketplace.json` - Marketplace catalog (repo root is the marketplace)
+- `.agents/plugins/marketplace.json` - Codex marketplace catalog
 - `learning-opportunities/` - The skill plugin
   - `.claude-plugin/plugin.json` - Plugin manifest
+  - `.codex-plugin/plugin.json` - Codex plugin manifest
   - `skills/learning-opportunities/` - The skill (SKILL.md + resources)
 - `learning-opportunities-auto/` - The auto-prompting hook plugin (requires `learning-opportunities`)
   - `.claude-plugin/plugin.json` - Plugin manifest
-  - `scripts/post-tool-use.sh` - PostToolUse hook (bash)
+  - `.codex-plugin/plugin.json` - Codex plugin manifest
+  - `hooks/post-tool-use.sh` - PostToolUse hook (bash)
 - `orient/` - The orientation generator plugin
   - `.claude-plugin/plugin.json` - Plugin manifest
+  - `.codex-plugin/plugin.json` - Codex plugin manifest
   - `skills/orient/` - The skill (SKILL.md)
 - `CHANGELOG.md` - Release history
 
 ## Releasing a New Version
 
-Each plugin has its own version. When releasing, update the version in three places atomically:
+Each plugin has its own version. When releasing, update the version in four places atomically:
 
 1. `<plugin>/.claude-plugin/plugin.json` — bump `version`
-2. `.claude-plugin/marketplace.json` — bump the matching plugin entry's `version`
-3. `CHANGELOG.md` — add entry at top, under the `# Changelog` heading
+2. `<plugin>/.codex-plugin/plugin.json` — bump `version`
+3. `.claude-plugin/marketplace.json` — bump the matching plugin entry's `version`
+4. `CHANGELOG.md` — add entry at top, under the `# Changelog` heading
 
-Use semver. All three files must show the same version string for the plugin being released. Commit all three together.
+Use semver. All versioned files must show the same version string for the plugin being released. Commit them together.
 
 ### Changelog format
 

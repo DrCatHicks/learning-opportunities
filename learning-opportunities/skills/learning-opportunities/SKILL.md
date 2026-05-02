@@ -37,6 +37,7 @@ Keep offers brief and non-repetitive. One short sentence is enough.
 
 This skill applies to:
 - Claude Code sessions (primary context)
+- Codex sessions
 - Technical discussions in chat where code concepts are being explored
 - Any context where the user is learning through building
 
@@ -191,14 +192,16 @@ If this skill is invoked with the argument `orient` (i.e., `/learning-opportunit
 
 ### Finding the orientation file
 
-Look for `resources/orientation.md` relative to this skill file at these locations, in order:
+Look for `resources/orientation.md` relative to the user's project or user-level skills at these locations, in order:
 
-1. `.claude/skills/learning-opportunities/resources/orientation.md` (project level)
-2. `~/.claude/skills/learning-opportunities/resources/orientation.md` (user level)
+1. `.codex/skills/learning-opportunities/resources/orientation.md` (Codex project level)
+2. `.claude/skills/learning-opportunities/resources/orientation.md` (Claude Code project level)
+3. `~/.codex/skills/learning-opportunities/resources/orientation.md` (Codex user level)
+4. `~/.claude/skills/learning-opportunities/resources/orientation.md` (Claude Code user level)
 
 If the file does not exist at either location, stop and tell the user:
 
-> "No orientation file found. Run `/orient:orient` first to generate one for this repo. It takes about 30 seconds."
+> "No orientation file found. Invoke the orient skill first to generate one for this repo. It takes about 30 seconds."
 
 See [orient](https://github.com/mcmullarkey/orient) for the plugin that generates orientation files.
 

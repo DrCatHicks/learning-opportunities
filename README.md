@@ -1,4 +1,4 @@
-# Learning Opportunities: A Claude Code Skill for Deliberate Skill Development
+# Learning Opportunities: A Claude Code and Codex Skill for Deliberate Skill Development
 
 **Build your expertise, not just your projects.**
 
@@ -10,6 +10,28 @@ Pairs well with [Learning-Goal](https://github.com/DrCatHicks/learning-goal), a 
 
 
 ## Installation
+
+### Codex
+
+This repository is also a Codex plugin marketplace. To add it from GitHub:
+
+```
+codex plugin marketplace add https://github.com/DrCatHicks/learning-opportunities.git
+```
+
+For local development from a checkout:
+
+```
+codex plugin marketplace add /path/to/learning-opportunities
+```
+
+The Codex marketplace includes:
+
+- `learning-opportunities` — the core learning exercise skill
+- `learning-opportunities-auto` — optional post-commit prompting hook
+- `orient` — repo orientation generator
+
+### Claude Code
 
 This repository is a [Claude Code plugin marketplace](https://docs.claude.com/en/docs/claude-code/plugins). To install:
 

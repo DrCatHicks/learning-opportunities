@@ -1,0 +1,29 @@
+{
+  "name": "learning-opportunities",
+  "version": "1.0.0",
+  "description": "Science-based learning exercises for deliberate skill development during AI-assisted coding",
+  "author": {
+    "name": "Dr. Cat Hicks",
+    "email": "dr.cat.hicks@gmail.com",
+    "url": "https://drcathicks.com"
+  },
+  "homepage": "https://github.com/DrCatHicks/learning-opportunities",
+  "repository": "https://github.com/DrCatHicks/learning-opportunities",
+  "license": "CC-BY-4.0",
+  "keywords": ["learning", "education", "skill-development", "expertise", "learning-science"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Learning Opportunities",
+    "shortDescription": "Deliberate learning exercises during AI-assisted coding",
+    "longDescription": "Offers optional 10-15 minute learning exercises after substantial coding work, using prediction, generation, retrieval practice, and reflection to help users build durable expertise while using AI coding tools.",
+    "developerName": "Dr. Cat Hicks",
+    "category": "Education",
+    "capabilities": ["Interactive", "Read"],
+    "websiteURL": "https://github.com/DrCatHicks/learning-opportunities",
+    "defaultPrompt": [
+      "Offer a learning exercise for the work we just finished",
+      "Run a repo orientation learning exercise"
+    ],
+    "brandColor": "#2563EB"
+  }
+}

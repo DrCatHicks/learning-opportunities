@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash|exec_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ./hooks/post-tool-use.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
