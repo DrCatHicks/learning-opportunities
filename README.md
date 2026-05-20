@@ -1,4 +1,4 @@
-# Learning Opportunities: A Claude Code and Codex Skill for Deliberate Skill Development
+# Learning Opportunities: A Skill for Deliberate Skill Development
 
 **Build your expertise, not just your projects.**
 
@@ -10,6 +10,54 @@ Pairs well with [Learning-Goal](https://github.com/DrCatHicks/learning-goal), a 
 
 
 ## Installation
+
+### GitHub Copilot CLI
+
+This repository is a [Copilot CLI plugin marketplace](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-marketplace). To install:
+
+1. Add the marketplace:
+   ```
+   copilot 
+   /plugin marketplace add DrCatHicks/learning-opportunities
+   ```
+
+2. Install the plugin:
+   ```
+   copilot 
+   /plugin install learning-opportunities@learning-opportunities
+   ```
+
+The marketplace includes:
+
+- `learning-opportunities` — the core learning exercise skill
+- `learning-opportunities-auto` — optional post-commit prompting hook
+- `orient` — repo orientation generator
+
+### OpenCode
+
+OpenCode supports the skills in this repo directly. From your project directory, copy the skill and plugin files from a clone of this repo:
+
+**Skills (learning-opportunities, orient):**
+
+```bash
+# Project-level
+mkdir -p .opencode/skills
+cp -r /path/to/learning-opportunities/learning-opportunities/skills/learning-opportunities .opencode/skills/
+
+# Or personal (global)
+cp -r /path/to/learning-opportunities/learning-opportunities/skills/learning-opportunities ~/.agents/skills/
+```
+
+**Auto-prompting hook (learning-opportunities-auto):**
+
+> **Note:** This plugin requires the `learning-opportunities` skill (above) to be installed first. The hook nudges the agent to offer exercises, but the skill must be present for the agent to run them.
+
+```bash
+mkdir -p .opencode/plugins
+cp /path/to/learning-opportunities/learning-opportunities-auto/.opencode/plugins/learning-opportunities-auto.ts .opencode/plugins/
+```
+
+Then restart OpenCode. The plugin will detect git commits and nudge the agent to offer learning exercises.
 
 ### Codex
 
@@ -48,6 +96,15 @@ This repository is a [Claude Code plugin marketplace](https://docs.claude.com/en
 3. Restart Claude Code to activate
  
 For more on Claude Code plugins, see the [plugin documentation](https://docs.claude.com/en/docs/claude-code/plugins).
+
+### GitHub Copilot CLI (alternate method)
+
+If you prefer to install directly from the repository without using the marketplace:
+
+```
+copilot 
+/plugin install DrCatHicks/learning-opportunities:learning-opportunities
+```
 
 ### Automatic Prompting (Optional)
 
