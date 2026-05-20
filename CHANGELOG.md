@@ -1,5 +1,28 @@
 # Changelog
 
+## learning-opportunities 1.1.0
+
+Added GitHub Copilot CLI and OpenCode support.
+
+**New:**
+- `.github/plugin/marketplace.json` for canonical Copilot CLI marketplace discovery
+- `skills` field in `.claude-plugin/plugin.json` for explicit skill path declaration (Copilot CLI)
+
+## learning-opportunities-auto 1.1.0
+
+Added GitHub Copilot CLI and OpenCode support.
+
+**New:**
+- `.opencode/plugins/learning-opportunities-auto.ts` — OpenCode event plugin equivalent of the bash hook
+- `hooks` field in `.claude-plugin/plugin.json` for explicit hook path declaration (Copilot CLI)
+
+## orient 1.1.0
+
+Added GitHub Copilot CLI and OpenCode support.
+
+**New:**
+- `skills` field in `.claude-plugin/plugin.json` for explicit skill path declaration (Copilot CLI)
+
 ## orient 1.0.0
 
 Added orient plugin to the learning-opportunities marketplace.
