@@ -1,5 +1,10 @@
 # Changelog
 
+## learning-opportunities-auto 1.0.2
+
+**Fixed:**
+- Fixed Codex hook execution from repository working directories by resolving the hook script from Codex's plugin cache instead of using a repo-relative path
+
 ## orient 1.0.0
 
 Added orient plugin to the learning-opportunities marketplace.

@@ -40,7 +40,7 @@ If you run into issues, check that `Git\bin` (not just `Git\cmd`) is on your PAT
 
 ## Codex Support
 
-Codex uses `hooks.codex.json`, which runs the same `hooks/post-tool-use.sh` script with a Codex-safe relative command. The script accepts both Claude Code's `command` payload field and Codex-style `cmd` payloads.
+Codex uses `hooks.codex.json`, which runs the same `hooks/post-tool-use.sh` script from Codex's plugin cache. The script accepts both Claude Code's `command` payload field and Codex-style `cmd` payloads.
 
 ## How Hooks Work
 

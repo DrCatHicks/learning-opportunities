@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash ./hooks/post-tool-use.sh"
+            "command": "bash -c 'script=\"${CODEX_HOME:-$HOME/.codex}/plugins/cache/learning-opportunities/learning-opportunities-auto/1.0.2/hooks/post-tool-use.sh\"; [ -f \"$script\" ] && exec bash \"$script\" || exit 0'"
           }
         ]
       }
