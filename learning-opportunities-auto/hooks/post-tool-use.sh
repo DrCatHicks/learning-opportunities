@@ -8,18 +8,34 @@ set -uo pipefail
 # The skill itself decides whether the commit's content is worth an
 # exercise — this hook just provides the nudge at the right moment.
 #
-# No external dependencies beyond bash and standard Unix tools.
+# Uses jq when available for correct JSON parsing; degrades to a scoped
+# sed extraction otherwise, so there is no hard dependency.
 
 INPUT=$(cat)
 
 # ---------------------------------------------------------------------------
-# Check if this was a git commit. Claude Code sends shell text in a "command"
-# field; Codex can send it in a "cmd" field. False positives (e.g., output
-# that mentions "git commit") are harmless — we just offer a learning exercise
-# unnecessarily.
+# Check if this was a `git commit`. The previous heuristic grepped the WHOLE
+# payload for '"(command|cmd)".*git.*commit', which fired on any Bash call
+# whose command OR output merely contained "git" then "commit" — e.g. `git log`
+# / `git status` (output prints "commit ..." / "nothing to commit"), or
+# grepping for a "github.com/.../commit" URL. Those are not commits.
+#
+# Fix: read ONLY the command field, then match an actual `git commit`
+# invocation. Prefer jq for correct JSON parsing; fall back to a scoped sed
+# extraction when jq is unavailable.
 # ---------------------------------------------------------------------------
 
-if ! echo "$INPUT" | grep -Eq '"(command|cmd)".*git.*commit'; then
+if command -v jq >/dev/null 2>&1; then
+  CMD=$(printf '%s' "$INPUT" | jq -r '.tool_input.command // .tool_input.cmd // empty' 2>/dev/null)
+else
+  CMD=$(printf '%s' "$INPUT" | sed -nE 's/.*"(command|cmd)"[[:space:]]*:[[:space:]]*"([^"]*)".*/\2/p' | head -1)
+fi
+
+# Match `git` as a word, then the `commit` subcommand (whitespace immediately
+# before it) within a single command segment (no ';', '&&', '|' bridging
+# unrelated commands). Rejects "github.com/.../commit" (git is not a word here)
+# and "git log --grep=commit" (no whitespace before "commit").
+if ! printf '%s' "$CMD" | grep -Eq '\bgit\b[^;&|]*[[:space:]]commit\b'; then
   exit 0
 fi
 
