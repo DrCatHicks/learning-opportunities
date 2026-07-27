@@ -83,7 +83,7 @@ Then call `learning-opportunities` with the `orient` argument to get offered two
 
 ### Personalize for Your Learning Style (Optional)
 
-After installing the core skill, you can run a short interview that writes personal overrides — what's newer vs stronger for you, which exercise styles help, when to offer, and where to store notes from completed or skipped sessions.
+After installing the core skill, you can run a short interview that writes personal overrides — what's newer vs stronger for you, which exercise styles help (multi-select), when to offer, and where to store notes from completed or skipped sessions (including nowhere). Choose a quick (~3 min) or full path when prompted.
 
 ```
 /plugin install learning-opportunities-setup@learning-opportunities
@@ -91,6 +91,12 @@ After installing the core skill, you can run a short interview that writes perso
 
 ```
 /learning-opportunities-setup
+```
+
+After you have used exercises for a while, retune from hits and misses without redoing the full questionnaire:
+
+```
+/learning-opportunities-setup refine
 ```
 
 Prefer a local or gitignored instruction file for personal prefs unless your team wants shared norms in the repo. See [learning-opportunities-setup/README.md](./learning-opportunities-setup/README.md).
@@ -158,7 +164,7 @@ The measures are free and open access under a CC-BY-SA 4.0 license. For the full
 
 ## Customization
 
-**Fastest path:** install and run `learning-opportunities-setup` (see above). It interviews you and writes the override block.
+**Fastest path:** install and run `learning-opportunities-setup` (see above). Pick the quick path for defaults in a few minutes, or full path for more detail. Later, use `/learning-opportunities-setup refine` to patch overrides from real hits and misses.
 
 You can also refine manually. You might want to:
 

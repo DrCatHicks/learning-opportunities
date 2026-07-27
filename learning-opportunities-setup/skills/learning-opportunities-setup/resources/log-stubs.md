@@ -1,10 +1,10 @@
 # Log stubs
 
-Create these only when the user opted into written trails. Do not overwrite non-empty files.
+Create these only when the user opted into written trails. Do not overwrite non-empty files. Be tool-agnostic — use the paths they gave.
 
 ## Daily note section
 
-Tell the user to use this heading in their existing daily note (do not invent a dated file unless they give an exact path):
+Tell the user to use this heading in their existing daily note or journal (do not invent a dated file unless they give an exact path):
 
 ```markdown
 ## Learning
@@ -14,17 +14,17 @@ Tell the user to use this heading in their existing daily note (do not invent a 
 
 ## Rolling weekly log
 
-Suggested filename: `learning_this_week.md`
+Suggested filename: `learning_this_week.md` (or the name they chose)
 
 ```markdown
 # Learning log
 
 <!-- Format: - YYYY-MM-DD: [concept] — [what was understood or where the gap was] -->
 <!-- Only log entries where active learning happened — not every topic mentioned -->
-<!-- Write during sessions; read on a scheduled retrieval pass (e.g. Friday). -->
+<!-- Write during sessions; read on a scheduled retrieval pass if they opted in. -->
 ```
 
-## Archive history
+## Archive history (full path only)
 
 Suggested filename: `learning_history.md`
 

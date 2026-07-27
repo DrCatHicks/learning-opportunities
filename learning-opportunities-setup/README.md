@@ -9,9 +9,9 @@ A companion plugin for [learning-opportunities](../learning-opportunities/) that
 The core skill ships sensible defaults. Many people get more value after telling the agent:
 
 - what's newer vs stronger for them
-- which exercise styles help (and which feel like a bad quiz)
+- which exercise styles help (and which feel like a bad quiz) — multi-select; no forced single style
 - whether to auto-offer or wait to be asked
-- where to put short notes after completed — or skipped — sessions
+- where to put short notes after completed — or skipped — sessions (including **nowhere**)
 
 This plugin turns that into a short guided interview instead of a DIY edit to `CLAUDE.md`.
 
@@ -32,12 +32,25 @@ This plugin turns that into a short guided interview instead of a DIY edit to `C
    /learning-opportunities-setup
    ```
 
+Choose **quick path** (~3 minutes) or **full path** (~10–15 minutes) when prompted. Say "just make it work" to take quick path with sensible defaults.
+
+## Refine after you have hits and misses
+
+Once you have used exercises for a while, retune without re-running the full questionnaire:
+
+```
+/learning-opportunities-setup refine
+```
+
+Refine reads your existing `## Learning Opportunities` block, asks episode-based hit/miss questions, proposes a diff, and patches in place.
+
 ## What it writes
 
-- A `## Learning Opportunities` override section in the instruction file you choose (`CLAUDE.local.md`, Cursor rules, MEMORY, etc.)
+- A `## Learning Opportunities` override section in the **primary** instruction file you choose (`CLAUDE.local.md`, Cursor rules, MEMORY, etc.)
 - Optional stub files for a weekly learning log / history, if you want spaced retrieval later
+- Optional copy into a second tool's instruction file only if you ask at the end
 
-Prefer a **local or gitignored** file for personal preferences unless your team wants shared norms committed to the repo.
+Prefer a **local or gitignored** file for personal preferences unless your team wants shared norms committed to the repo. Choosing **no session notes** is a valid, successful outcome.
 
 ## Related
 
