@@ -1,5 +1,13 @@
 # Changelog
 
+## learning-opportunities-setup 1.0.0
+
+Added learning-opportunities-setup plugin to the learning-opportunities marketplace.
+
+**New:**
+- Guided interview skill for personalizing learning-opportunities (learning style, offer timing, session note storage including skipped exercises)
+- Writes local override blocks and optional weekly learning-log stubs
+
 ## learning-opportunities-auto 1.0.2
 
 **Fixed:**

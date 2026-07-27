@@ -1,0 +1,27 @@
+{
+  "name": "learning-opportunities-setup",
+  "description": "Interviews you about learning preferences and writes personal overrides for the learning-opportunities skill",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ruthie Irvin",
+    "url": "https://github.com/mx-ruthie"
+  },
+  "license": "CC-BY-4.0",
+  "homepage": "https://github.com/DrCatHicks/learning-opportunities",
+  "repository": "https://github.com/DrCatHicks/learning-opportunities",
+  "keywords": ["learning", "personalization", "onboarding", "preferences", "setup"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Learning Opportunities Setup",
+    "shortDescription": "Personalize learning-opportunities",
+    "longDescription": "Guided interview that writes personal overrides for the learning-opportunities skill — learning style, when to offer exercises, and where to store session notes (including skipped ones).",
+    "developerName": "Ruthie Irvin",
+    "category": "Education",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://github.com/DrCatHicks/learning-opportunities",
+    "defaultPrompt": [
+      "Help me personalize learning-opportunities for my workflow"
+    ],
+    "brandColor": "#0F766E"
+  }
+}

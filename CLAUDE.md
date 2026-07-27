@@ -22,6 +22,10 @@ A Claude Code plugin packaging science-based learning exercises for deliberate s
   - `.claude-plugin/plugin.json` - Plugin manifest
   - `.codex-plugin/plugin.json` - Codex plugin manifest
   - `skills/orient/` - The skill (SKILL.md)
+- `learning-opportunities-setup/` - Personalization interview plugin
+  - `.claude-plugin/plugin.json` - Plugin manifest
+  - `.codex-plugin/plugin.json` - Codex plugin manifest
+  - `skills/learning-opportunities-setup/` - The skill (SKILL.md + resources)
 - `CHANGELOG.md` - Release history
 
 ## Releasing a New Version
