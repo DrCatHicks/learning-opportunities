@@ -49,7 +49,7 @@
     {
       "name": "learning-opportunities-setup",
       "source": "./learning-opportunities-setup",
-      "description": "Interviews you about learning preferences and writes personal overrides for the learning-opportunities skill",
+      "description": "Interviews you about learning preferences (quick or full path) and can refine overrides after hits/misses for the learning-opportunities skill",
       "version": "1.0.0",
       "author": {
         "name": "Ruthie Irvin",

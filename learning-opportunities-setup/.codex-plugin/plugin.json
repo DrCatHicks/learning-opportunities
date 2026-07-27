@@ -1,6 +1,6 @@
 {
   "name": "learning-opportunities-setup",
-  "description": "Interviews you about learning preferences and writes personal overrides for the learning-opportunities skill",
+  "description": "Interviews you about learning preferences (quick or full path) and can refine overrides after hits/misses for the learning-opportunities skill",
   "version": "1.0.0",
   "author": {
     "name": "Ruthie Irvin",
@@ -14,13 +14,14 @@
   "interface": {
     "displayName": "Learning Opportunities Setup",
     "shortDescription": "Personalize learning-opportunities",
-    "longDescription": "Guided interview that writes personal overrides for the learning-opportunities skill — learning style, when to offer exercises, and where to store session notes (including skipped ones).",
+    "longDescription": "Guided interview (quick or full path) that writes personal overrides for the learning-opportunities skill — learning style, when to offer exercises, and where to store session notes (including none). Use refine mode after hits and misses to patch overrides in place.",
     "developerName": "Ruthie Irvin",
     "category": "Education",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/DrCatHicks/learning-opportunities",
     "defaultPrompt": [
-      "Help me personalize learning-opportunities for my workflow"
+      "Help me personalize learning-opportunities for my workflow",
+      "Refine my learning-opportunities overrides from recent hits and misses"
     ],
     "brandColor": "#0F766E"
   }
