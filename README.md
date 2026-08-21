@@ -30,6 +30,7 @@ The Codex marketplace includes:
 - `learning-opportunities` — the core learning exercise skill
 - `learning-opportunities-auto` — optional post-commit prompting hook
 - `orient` — repo orientation generator
+- `learning-opportunities-setup` — personalization interview (learning style + note storage)
 
 ### Claude Code
 
@@ -79,6 +80,26 @@ Then call `learning-opportunities` with the `orient` argument to get offered two
 ```
 /learning-opportunities orient
 ```
+
+### Personalize for Your Learning Style (Optional)
+
+After installing the core skill, you can run a short interview that writes personal overrides — what's newer vs stronger for you, which exercise styles help (multi-select), when to offer, and where to store notes from completed or skipped sessions (including nowhere). Choose a quick (~3 min) or full path when prompted.
+
+```
+/plugin install learning-opportunities-setup@learning-opportunities
+```
+
+```
+/learning-opportunities-setup
+```
+
+After you have used exercises for a while, retune from hits and misses without redoing the full questionnaire:
+
+```
+/learning-opportunities-setup refine
+```
+
+Prefer a local or gitignored instruction file for personal prefs unless your team wants shared norms in the repo. See [learning-opportunities-setup/README.md](./learning-opportunities-setup/README.md).
 
 ## Why You Might Want to Experiment with This Skill
 
@@ -143,7 +164,9 @@ The measures are free and open access under a CC-BY-SA 4.0 license. For the full
 
 ## Customization
 
-This skill can be significantly refined and adapted. You might want to:
+**Fastest path:** install and run `learning-opportunities-setup` (see above). Pick the quick path for defaults in a few minutes, or full path for more detail. Later, use `/learning-opportunities-setup refine` to patch overrides from real hits and misses.
+
+You can also refine manually. You might want to:
 
 - Include information about your own technical expertise and existing knowledge to start the exercises at the right level (e.g. known languages, learning goals)
 - Prompt Claude to include insights from the learning opportunities into your project Claude.md 
@@ -151,6 +174,7 @@ This skill can be significantly refined and adapted. You might want to:
 - Add project-specific examples to the exercises
 - Change the soft cap on exercises per session
 - Add domain-specific retrieval check-in questions
+- Choose where session notes live (daily notes, a weekly write-only log, or nowhere) — including what to do when you skip an exercise
 - Explore adding evaluation checks to assess how successfully this skill is fulfilling its instructions
 
 ## Background
@@ -178,6 +202,12 @@ Orient:
 I'm a machine learning engineer who used to be a therapist + social science researcher. I'm thinking a lot about how to leverage agentic AI to help people learn skills, see [blendtutor](https://github.com/mcmullarkey/blendtutor) for another example.
 
 - [Website](https://mcmullarkey.github.io/)
+
+Learning-Opportunities-Setup:
+
+**Ruthie Irvin**
+
+- [GitHub](https://github.com/mx-ruthie)
 
 ## Sources
 

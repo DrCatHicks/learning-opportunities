@@ -1,5 +1,18 @@
 # Changelog
 
+## learning-opportunities-setup 1.0.0
+
+Added learning-opportunities-setup plugin to the learning-opportunities marketplace.
+
+**New:**
+- Guided interview skill for personalizing learning-opportunities (learning style, offer timing, session note storage including skipped exercises)
+- Quick path (~3 min) and full path; adaptive jump to quick when the user wants defaults
+- Multi-select learning styles (no forced single style); optional interaction prefs (never probe)
+- Numbered C6/C7 for auto-hook hard stop and questions-only-when-stopped
+- Storage choices: none / daily note / rolling log / both; tool-agnostic logging
+- `/learning-opportunities-setup refine` mode: episode-based hit/miss interview that patches overrides in place
+- Minimal and richer anonymized override examples; writes local override blocks and optional weekly learning-log stubs
+
 ## learning-opportunities-auto 1.0.2
 
 **Fixed:**
