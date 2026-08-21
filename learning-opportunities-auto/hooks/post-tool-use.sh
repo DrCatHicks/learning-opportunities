@@ -4,7 +4,8 @@ set -uo pipefail
 # learning-opportunities-auto: PostToolUse hook (matches Bash tool)
 #
 # Fires after every Bash tool use. Checks whether the command was a
-# `git commit` and, if so, suggests that Claude offer a learning exercise.
+# `git commit` or `jj commit` and, if so, suggests that Claude offer a
+# learning exercise.
 # The skill itself decides whether the commit's content is worth an
 # exercise — this hook just provides the nudge at the right moment.
 #
@@ -13,13 +14,44 @@ set -uo pipefail
 INPUT=$(cat)
 
 # ---------------------------------------------------------------------------
-# Check if this was a git commit. Claude Code sends shell text in a "command"
-# field; Codex can send it in a "cmd" field. False positives (e.g., output
-# that mentions "git commit") are harmless — we just offer a learning exercise
-# unnecessarily.
+# Check if this was a git or jj commit. Claude Code sends shell text in a
+# "command" field; Codex can send it in a "cmd" field. We extract just that
+# field's value so we don't match against tool_response output that mentions
+# "git commit" or "jj commit" (e.g. the user running `git log` or
+# `grep "jj commit" file`).
 # ---------------------------------------------------------------------------
 
-if ! echo "$INPUT" | grep -Eq '"(command|cmd)".*git.*commit'; then
+CMD=$(echo "$INPUT" | grep -oE '"(command|cmd)":"([^"\\]|\\.)*"' | head -1 | sed -E 's/^"(command|cmd)":"//; s/"$//')
+
+if [[ -z "$CMD" ]]; then
+  exit 0
+fi
+
+# The regex below is gnarly, so here's the breakdown:
+#
+#   (^|[;&|`(][[:space:]]*|\$\([[:space:]]*)
+#     Anchor — match at the start of the command, or right after a shell
+#     separator (`;`, `&`, `|`, backtick, `(`) with optional whitespace, or
+#     after a `$(` command substitution. Prevents matching `foogit commit`.
+#
+#   (jj|git)
+#     The literal `jj` or `git`.
+#
+#   ([[:space:]]+-[^[:space:]"]+([[:space:]]+[^-[:space:]"][^[:space:]"]*)?)*
+#     Zero or more global-flag blocks. Each block is `<space>-<flag>`,
+#     optionally followed by `<space><value>` where the value doesn't start
+#     with `-`. This lets `jj -R /repo commit` match, while keeping
+#     `jj log -r commit` from matching (because `log` doesn't start with
+#     `-` so it isn't a flag).
+#
+#   [[:space:]]+commit
+#     The literal `commit` subcommand.
+#
+#   ([[:space:]";|&)]|$|\\)
+#     Terminator — whitespace, quote, shell separator, end of string, or
+#     backslash. Prevents matching things like `git commit-tree`.
+
+if ! echo "$CMD" | grep -Eq '(^|[;&|`(][[:space:]]*|\$\([[:space:]]*)(jj|git)([[:space:]]+-[^[:space:]"]+([[:space:]]+[^-[:space:]"][^[:space:]"]*)?)*[[:space:]]+commit([[:space:]";|&)]|$|\\)'; then
   exit 0
 fi
 
