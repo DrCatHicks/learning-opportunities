@@ -1,5 +1,20 @@
 # Changelog
 
+## learning-opportunities-auto 1.0.3
+
+**Fixed:**
+- Read commit commands only from the top-level hook input, avoiding false positives from command text in tool output
+- Use Codex's plugin root environment variable instead of a version-specific cache path, while still failing silently if the resolved script is missing
+- Stop parsing once the required fields are found so large tool responses do not delay every shell command
+- Recognize Git commits that use documented global options
+- Recognize Git commits behind shell assignments and execution wrappers
+- Preserve the automatic two-offer session cap, including for an empty or newline-containing session id
+- Recognize commits inside `bash -c`/`sh -c`, `env -S`/`--split-string`, and `$(...)`/backtick bodies that contain an escaped quote
+- Ignore `git commit` text inside heredoc bodies, such as a script written with `cat <<'EOF'`
+- Recognize commits whose multi-line quoted message contains help or dry-run text
+- Recognize commits behind `timeout` and `gtimeout`
+- Keep JSON parsing linear for payloads with many strings or escapes
+
 ## learning-opportunities-auto 1.0.2
 
 **Fixed:**

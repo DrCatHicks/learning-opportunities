@@ -8,7 +8,7 @@ A companion plugin for [learning-opportunities](../learning-opportunities/) that
 
 The hook fires after every `Bash` tool use and checks whether the command was a `git commit`. After a successful commit, it nudges Claude to consider whether the work that was just committed is a good fit for a learning exercise — the `learning-opportunities` skill handles deciding what kind of exercise to offer based on the nature of the changes.
 
-It respects the same session limits as the skill: no more than 2 offers per session, and it stops if the user declines.
+The hook caps automatic offers at 2 per session; the skill separately stops offering after the user declines or completes an exercise.
 
 ## Installation
 
@@ -40,7 +40,7 @@ If you run into issues, check that `Git\bin` (not just `Git\cmd`) is on your PAT
 
 ## Codex Support
 
-Codex uses `hooks.codex.json`, which runs the same `hooks/post-tool-use.sh` script from Codex's plugin cache. The script accepts both Claude Code's `command` payload field and Codex-style `cmd` payloads.
+Codex uses `hooks.codex.json`, which runs the same `hooks/post-tool-use.sh` script from the installed plugin root. The script reads the standard `tool_input.command` payload field and accepts `tool_input.cmd` as a compatibility fallback.
 
 ## How Hooks Work
 
