@@ -26,12 +26,13 @@ A Claude Code plugin packaging science-based learning exercises for deliberate s
 
 ## Releasing a New Version
 
-Each plugin has its own version. When releasing, update the version in four places atomically:
+Each plugin has its own version. When releasing, update the version in these places atomically:
 
 1. `<plugin>/.claude-plugin/plugin.json` — bump `version`
 2. `<plugin>/.codex-plugin/plugin.json` — bump `version`
 3. `.claude-plugin/marketplace.json` — bump the matching plugin entry's `version`
 4. `CHANGELOG.md` — add entry at top, under the `# Changelog` heading
+5. `learning-opportunities-auto/hooks.codex.json` — for `learning-opportunities-auto` releases only, bump the version in the Codex plugin-cache path inside the hook command (`.../plugins/cache/learning-opportunities/learning-opportunities-auto/<version>/hooks/post-tool-use.sh`); a stale path here silently disables the Codex hook
 
 Use semver. All versioned files must show the same version string for the plugin being released. Commit them together.
 
